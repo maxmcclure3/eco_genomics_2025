@@ -20,3 +20,11 @@ cleaned reads ready to proceed to next step in pipeline: mapping to reference ge
 
 ###20250916: mapping red spruce clean reads to the reference genome 
 
+used mapping.sh loacted in: `~/projects/eco_genomics_2025/population_genomics/myscripts`
+output: .sam files.
+
+edited process_bam.sh and bam_stats.sh (located in above directory) to match my population code etc. 
+wrapped both scripts into process_stats_wrapper.sh, located in my scripts
+will run wrapper once mapping job is done
+
+
