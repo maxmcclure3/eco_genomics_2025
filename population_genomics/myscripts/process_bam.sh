@@ -11,7 +11,7 @@ module load gcc sambamba
 
 ### Processing the alignment files
 
-INPUT="gpfs1/cl/ecogen/pbio6800/PopulationGenomics/bams"  # path where the *sam alignments live
+INPUT="/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/bams"  # path where the *sam alignments live
 
 MYPOP="2032"  # your 4-digit pop code
 

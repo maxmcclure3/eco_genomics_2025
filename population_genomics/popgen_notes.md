@@ -27,4 +27,14 @@ edited process_bam.sh and bam_stats.sh (located in above directory) to match my 
 wrapped both scripts into process_stats_wrapper.sh, located in my scripts
 will run wrapper once mapping job is done
 
+###20250918: review bam_stats and set up nucleotide diversity esitimation using ANGSD! 
+
+brought 2032.stats.txt into R and visualized the data: bamstats_review.r (in my scripts within population_genomics)
+roughly 66% reads mapped in proper pairs, suggests depth of coverage between 2-3
+
+Ran ANGSD: using ANGSD.sh and ANGSD_doTheta.sh in population/genomics/myscripts
+wrapped them together in diversity_wrapper.sh
+
+Ran the code and let it run over the weekend. 
+
 
