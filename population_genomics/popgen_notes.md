@@ -37,4 +37,17 @@ wrapped them together in diversity_wrapper.sh
 
 Ran the code and let it run over the weekend. 
 
+###20250918: Review ANGSD, nucleotide diversity.
+
+brought files outputted from ANGSD (in myresults/ANGSD/diversity, *.thetas)
+
+mydocs/nucleotide_diversity.Rmd was where I cleaned and visualized the data.
+
+normalized theta w and theta pi by number of sites analyzed. Histogram of number of sites in read
+visualized theta w and theta pi across the entire genome
+compared theta w and theta pi to see Tajimas D, showed a slight positive skew. 
+calculated effective population size using theta w/ theta pi/ mu/ generation time/ and C = 4. 
+Values are denoted in file. 
+calculated smallest and largest Tajimas D. 
+
 
