@@ -50,4 +50,12 @@ calculated effective population size using theta w/ theta pi/ mu/ generation tim
 Values are denoted in file. 
 calculated smallest and largest Tajimas D. 
 
+### 20250925: Comparing my red spruce population with black spruce outgroup.
+
+- calculated Fst between my population and black spruce (0.309295)
+  - using ANGSD_Fst.sh in my scripts
+  - put in the shared spreadsheet for ecogen
+- Calculated PCA and ADMIXTURE via PCAngsd. 
+  - using PCAngsd_RSBS.sh in my scripts
+  - visualized in PCA_Admix.Rmd in my docs
 
