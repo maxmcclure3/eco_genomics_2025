@@ -18,7 +18,7 @@ results: high quality seq. Q-scores >> 20. low amount of contamination. leading 
 
 cleaned reads ready to proceed to next step in pipeline: mapping to reference genome
 
-###20250916: mapping red spruce clean reads to the reference genome 
+### 20250916: mapping red spruce clean reads to the reference genome 
 
 used mapping.sh loacted in: `~/projects/eco_genomics_2025/population_genomics/myscripts`
 output: .sam files.
@@ -27,7 +27,7 @@ edited process_bam.sh and bam_stats.sh (located in above directory) to match my 
 wrapped both scripts into process_stats_wrapper.sh, located in my scripts
 will run wrapper once mapping job is done
 
-###20250918: review bam_stats and set up nucleotide diversity esitimation using ANGSD! 
+### 20250918: review bam_stats and set up nucleotide diversity esitimation using ANGSD! 
 
 brought 2032.stats.txt into R and visualized the data: bamstats_review.r (in my scripts within population_genomics)
 roughly 66% reads mapped in proper pairs, suggests depth of coverage between 2-3
@@ -37,7 +37,7 @@ wrapped them together in diversity_wrapper.sh
 
 Ran the code and let it run over the weekend. 
 
-###20250918: Review ANGSD, nucleotide diversity.
+### 20250918: Review ANGSD, nucleotide diversity.
 
 brought files outputted from ANGSD (in myresults/ANGSD/diversity, *.thetas)
 
