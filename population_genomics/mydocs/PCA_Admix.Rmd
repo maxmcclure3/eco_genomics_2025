@@ -18,7 +18,7 @@ library(ggpubr)
 
 ## Estimating our PCA
 ```{r}
-COV <- as.matrix(read.table("RSBS_poly_K2.cov"))
+COV <- as.matrix(read.table("RSBS_poly_K3.cov"))
 
 PCA <- eigen(COV)
 
@@ -60,7 +60,7 @@ data= cbind(data, pops)
 ## Plotting PCA
 
 ```{r}
-ggscatter(data, x = "V1", y = "V2",
+ggscatter(data, x = "V1", y = "V3",
           color = "Pop",
           mean.point = TRUE,
           size = 1,
@@ -68,9 +68,13 @@ ggscatter(data, x = "V1", y = "V2",
           ellipse.alpha = 0.2,
           ellipse.border.remove = T,
           star.plot = T,
-          main="Red spruce-Black spruce genetic PCA") +
-  theme_bw(base_size = 13, base_family = "Times") +
+          star.plot.lty = "dashed",
+          star.plot.lwd = 0.35,
+          main="Red spruce-Black spruce genetic PCA",
+          ggtheme = theme_minimal()) +
+ # theme_bw(base_size = 13, base_family = "Times") +
   labs(x = paste0("PC1: (",var[1]*100,"%)"), y = paste0("PC2: (",var[2]*100,"%)"))
+?ggscatter
 
 
 ```
