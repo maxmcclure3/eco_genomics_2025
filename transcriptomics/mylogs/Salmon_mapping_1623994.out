@@ -100,4 +100,52 @@ hits: 12,673,062, hits per frag:  0.906602[A[32mprocessed[31m 14,500,000 [
 hits: 13,125,380, hits per frag:  0.905295[A[32mprocessed[31m 15,000,000 [32mfragments[0m
 hits: 13,578,951, hits per frag:  0.905438[A[32mprocessed[31m 15,500,000 [32mfragments[0m
 hits: 14,033,798, hits per frag:  0.90705[A[32mprocessed[31m 16,000,000 [32mfragments[0m
-hits: 14,488,881, hits per frag:  0.905766
+hits: 14,488,881, hits per frag:  0.905766[A[32mprocessed[31m 16,500,000 [32mfragments[0m
+hits: 14,943,260, hits per frag:  0.906116[A[32mprocessed[31m 17,000,000 [32mfragments[0m
+hits: 15,399,590, hits per frag:  0.906784[A[32mprocessed[31m 17,500,000 [32mfragments[0m
+hits: 15,855,602, hits per frag:  0.906808[A[32mprocessed[31m 18,000,000 [32mfragments[0m
+hits: 16,311,859, hits per frag:  0.907656[A[32mprocessed[31m 18,500,000 [32mfragments[0m
+hits: 16,765,802, hits per frag:  0.906842[A[32mprocessed[31m 19,000,000 [32mfragments[0m
+hits: 17,218,497, hits per frag:  0.908184[A[32mprocessed[31m 19,500,000 [32mfragments[0m
+hits: 17,674,273, hits per frag:  0.907692[A[32mprocessed[31m 20,000,000 [32mfragments[0m
+hits: 18,127,212, hits per frag:  0.907546[A[32mprocessed[31m 20,500,000 [32mfragments[0m
+hits: 18,580,064, hits per frag:  0.907197[A[32mprocessed[31m 21,000,000 [32mfragments[0m
+hits: 19,030,484, hits per frag:  0.907384[A[32mprocessed[31m 21,500,000 [32mfragments[0m
+hits: 19,485,427, hits per frag:  0.907862[A[32mprocessed[31m 22,000,000 [32mfragments[0m
+hits: 19,940,867, hits per frag:  0.906457[A[32mprocessed[31m 22,500,000 [32mfragments[0m
+hits: 20,393,100, hits per frag:  0.906405[A[32mprocessed[31m 23,000,000 [32mfragments[0m
+hits: 20,846,114, hits per frag:  0.907419[A[32mprocessed[31m 23,500,000 [32mfragments[0m
+hits: 21,301,640, hits per frag:  0.907928[A[32mprocessed[31m 24,000,001 [32mfragments[0m
+hits: 21,757,412, hits per frag:  0.906669[A[32mprocessed[31m 24,500,000 [32mfragments[0m
+hits: 22,212,236, hits per frag:  0.90716[A[32mprocessed[31m 25,000,000 [32mfragments[0m
+hits: 22,667,261, hits per frag:  0.907379[A[32mprocessed[31m 25,500,000 [32mfragments[0m
+hits: 23,125,007, hits per frag:  0.907853[A[32mprocessed[31m 26,000,000 [32mfragments[0m
+hits: 23,579,234, hits per frag:  0.907455[A[32mprocessed[31m 26,500,000 [32mfragments[0m
+hits: 24,036,028, hits per frag:  0.907121[A[32mprocessed[31m 27,000,000 [32mfragments[0m
+hits: 24,490,278, hits per frag:  0.908319[A[32mprocessed[31m 27,500,000 [32mfragments[0m
+hits: 24,944,342, hits per frag:  0.907228[A[32mprocessed[31m 28,000,001 [32mfragments[0m
+hits: 25,399,727, hits per frag:  0.908139[A[32mprocessed[31m 28,500,000 [32mfragments[0m
+hits: 25,852,707, hits per frag:  0.908853[A[32mprocessed[31m 29,000,000 [32mfragments[0m
+hits: 26,306,972, hits per frag:  0.908183[A[32mprocessed[31m 29,500,000 [32mfragments[0m
+hits: 26,764,547, hits per frag:  0.907526[A[32mprocessed[31m 30,000,000 [32mfragments[0m
+hits: 27,219,016, hits per frag:  0.907833
+
+
+
+
+
+
+
+[2025-10-09 17:18:38.939] [jointLog] [info] Computed 115,801 rich equivalence classes for further processing
+[2025-10-09 17:18:38.939] [jointLog] [info] Counted 13,959,160 total reads in the equivalence classes 
+[2025-10-09 17:18:38.942] [jointLog] [info] Number of mappings discarded because of alignment score : 31,048,813
+[2025-10-09 17:18:38.942] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 5,393,023
+[2025-10-09 17:18:38.942] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2025-10-09 17:18:38.942] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 407,414
+[2025-10-09 17:18:38.942] [jointLog] [info] Mapping rate = 46.4339%
+
+[2025-10-09 17:18:38.942] [jointLog] [info] finished quantifyLibrary()
+[2025-10-09 17:18:38.943] [jointLog] [info] Starting optimizer
+[2025-10-09 17:18:38.968] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2025-10-09 17:18:38.972] [jointLog] [info] iteration = 0 | max rel diff. = 8417.64
+[2025-10-09 17:18:39.003] [jointLog] [info] iteration 11, adjusting effective lengths to account for biases
