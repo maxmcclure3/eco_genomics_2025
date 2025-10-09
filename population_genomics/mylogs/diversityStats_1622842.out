@@ -1,0 +1,11 @@
+mkdir: cannot create directory ‘/users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/mydata/ANGSD’: File exists
+mkdir: cannot create directory ‘/users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/mydata/homework1data/ST0’: File exists
+ANGSD_ST0.sh: line 29: angsd: command not found
+mkdir: cannot create directory ‘/users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/myresults/ANGSD’: File exists
+mkdir: cannot create directory ‘/users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/myresults/homework1results’: File exists
+	-> Problem opening file: '/users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/mydata/homework1data/ST0/2032_ALL_ST0.saf.idx'
+	-> Problem opening file: '/users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/mydata/homework1data/ST0/2032_ALL_ST0.saf.idx'
+ thetaStat do_stat /users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/mydata/homework1data/ST0/2032_ALL_ST0.thetas.idx -win 50000 -step 50000 -outnames /users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/myresults/homework1results/2032_ALL_ST0_win50000_step50000.thetasWindow.gz
+	Assuming binfile:/users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/mydata/homework1data/ST0/2032_ALL_ST0.thetas.gz and indexfile:/users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/mydata/homework1data/ST0/2032_ALL_ST0.thetas.idx
+	-> Problems opening file: '/users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/mydata/homework1data/ST0/2032_ALL_ST0.thetas.idx'
+cut: /users/m/r/mrmcclur/projects/eco_genomics_2025/population_genomics/myresults/homework1results/2032_ALL_ST0_win50000_step50000.thetasWindow.gz.pestPG: No such file or directory
