@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+module purge
+module load gcc angsd
 
 mkdir ~/projects/eco_genomics_2025/population_genomics/mydata/ANGSD
 
