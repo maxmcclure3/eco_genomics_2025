@@ -76,7 +76,7 @@ plotting histogram of total number of sites are in each seq window
 SitesPerWindowST0 <- ggplot(data = theta2_ST0, aes(x = nSites)) +
   geom_histogram(bins = 50, fill = "lightblue", color = "black") +
   geom_vline(xintercept = median(theta2_ST0$nSites), color = "red", linetype = "dashed") +
-  labs(title = "Distribution of windows with data", x = "Number of sites in 50kb window", y = "Frequency")
+   labs(title = "Distribution of windows with data", x = "Number of sites in 50kb window", y = "Frequency")
 
 
 SitesPerWindowST1 <- ggplot(data = theta2_ST1, aes(x = nSites)) +
@@ -108,27 +108,78 @@ plot pi
 
 ```{r}
 
-ggplot(theta2, aes(x=Chr, y = tPsite, color = Chr)) +
+piST0 <- ggplot(theta2_ST0, aes(x=Chr, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
   ylim(0,0.07) +
   labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
 
+
+piST1 <- ggplot(theta2_ST1, aes(x=Chr, y = tPsite, color = Chr)) +
+  geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
+  ylim(0,0.07) +
+  labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
+
+piSMDI1 <- ggplot(theta2_SMDI1, aes(x=Chr, y = tPsite, color = Chr)) +
+  geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
+  ylim(0,0.07) +
+  labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
+
+
+piSMDI2 <- ggplot(theta2_SMDI2, aes(x=Chr, y = tPsite, color = Chr)) +
+  geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
+  ylim(0,0.07) +
+  labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
+
+piST0_SMDI2 <- ggplot(theta2_ST0_SMDI2, aes(x=Chr, y = tPsite, color = Chr)) +
+  geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
+  ylim(0,0.07) +
+  labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
+
+ggarrange(piST0, piST1, piSMDI1, piSMDI2, piST0_SMDI2)
 ```
 
 
 ```{r}
-ggplot(theta2, aes(x = tWsite, y = tPsite, color = Chr)) +
+WvPiST0 <- ggplot(theta2_ST0, aes(x = tWsite, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
   labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
   geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
+
+WvPiST1 <- ggplot(theta2_ST1, aes(x = tWsite, y = tPsite, color = Chr)) +
+  geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
+  labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
+
+WvPiSMDI1 <- ggplot(theta2_SMDI1, aes(x = tWsite, y = tPsite, color = Chr)) +
+  geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
+  labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
+
+WvPiSMDI2 <- ggplot(theta2_SMDI2, aes(x = tWsite, y = tPsite, color = Chr)) +
+  geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
+  labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
+
+WvPiST0_SMDI2 <- ggplot(theta2_ST0_SMDI2, aes(x = tWsite, y = tPsite, color = Chr)) +
+  geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
+  labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
+
+ggarrange(WvPiST0, WvPiST1, WvPiSMDI1, WvPiSMDI2, WvPiST0_SMDI2)
 ```
 
 
 which windows have evidence of negative D and low nucleotide diversity ?
  - looking for selective sweep (demographic change), entire genome alteration
 ```{r}
-theta2[which(theta2$Tajima<-1.5 & theta2$tPsite < 0.001),]
-summary(theta2)
+theta2_ST0[which(theta2_ST0$Tajima<-1.5 & theta2_ST0$tPsite < 0.001),]
+theta2_ST1[which(theta2_ST1$Tajima<-1.5 & theta2_ST1$tPsite < 0.001),]
+theta2_SMDI1[which(theta2_SMDI1$Tajima<-1.5 & theta2_SMDI1$tPsite < 0.001),]
+theta2_SMDI2[which(theta2_SMDI2$Tajima<-1.5 & theta2_SMDI2$tPsite < 0.001),]
+theta2_ST0_SMDI2[which(theta2_ST0_SMDI2$Tajima<-1.5 & theta2_ST0_SMDI2$tPsite < 0.001),]
+
+
+summary(theta2_ST0)
 ```
 
 
@@ -136,28 +187,88 @@ summary(theta2)
 
 
 ```{r}
-mu = 2.5*10^-9
-gen.time = 30
-C = 4
-mean_tW <- mean(theta2$tWsite)
-mean_tP <- mean(theta2$tPsite)
+install.packages("gt")
+library(gt)
 
-Ne_theta <- mean_tW / (mu*gen.time*C)
-Ne_theta
-Ne_pi <- mean_tP / (mu*gen.time*C)
-Ne_pi
+stats <- function(theta2){
+  mu = 2.5*10^-9
+  gen.time = 30
+  C = 4
+  mean_tW <- mean(theta2$tWsite)
+  mean_tP <- mean(theta2$tPsite)
+  Ne_theta <- mean_tW / (mu*gen.time*C)
+  Ne_pi <- mean_tP / (mu*gen.time*C)
+  maxD = max(theta2$Tajima)
+  minD = min(theta2$Tajima)
+  BigD = theta2[which(theta2$Tajima == maxD),]
+  SmallD =  theta2[which(theta2$Tajima == minD),]
+  return(list(mean_tW = mean_tW, mean_tP = mean_tP, 
+              Ne_theta = Ne_theta, Ne_pi = Ne_pi,
+              maxD = maxD, minD = minD, 
+              BigD = BigD$Chr, SmallD = SmallD$Chr))
+}
+
+ST0stats <- stats(theta2_ST0)
+ST1stats <- stats(theta2_ST1)
+SMDI1stats <- stats(theta2_SMDI1)
+SMDI2stats <- stats(theta2_SMDI2)
+ST0_SMDI2stats <- stats(theta2_ST0_SMDI2)
 
 
-sum(theta2$nSites)
+table_data <- tibble(
+  a = c("skipTriallelic 0", "skipTriallelic 1", 
+            "setMinDepthInd 1", "setMinDepthInd 2", 
+            "skipTriallelic 1 & setMinDepthInd 2"),
+  Average_tW = c(ST0stats$mean_tW, ST1stats$mean_tW,
+                SMDI1stats$mean_tW, SMDI2stats$mean_tW, 
+                ST0_SMDI2stats$mean_tW),
+  Average_tP = c(ST0stats$mean_tP, ST1stats$mean_tP,
+                SMDI1stats$mean_tP, SMDI2stats$mean_tP, 
+                ST0_SMDI2stats$mean_tP),
+  Ne_theta = c(ST0stats$Ne_theta, ST1stats$Ne_theta,
+                SMDI1stats$Ne_theta, SMDI2stats$Ne_theta, 
+                ST0_SMDI2stats$Ne_theta),
+  Ne_pi = c(ST0stats$Ne_pi, ST1stats$Ne_pi,
+                SMDI1stats$Ne_pi, SMDI2stats$Ne_pi, 
+                ST0_SMDI2stats$Ne_pi),
+  maxD = c(ST0stats$maxD, ST1stats$maxD,
+                SMDI1stats$maxD, SMDI2stats$maxD, 
+                ST0_SMDI2stats$maxD),
+  minD = c(ST0stats$minD, ST1stats$minD,
+                SMDI1stats$minD, SMDI2stats$minD, 
+                ST0_SMDI2stats$minD),
+  BigD = c(ST0stats$BigD, ST1stats$BigD,
+                SMDI1stats$BigD, SMDI2stats$BigD, 
+                ST0_SMDI2stats$BigD),
+  SmallD = c(ST0stats$SmallD, ST1stats$SmallD,
+                SMDI1stats$SmallD, SMDI2stats$SmallD, 
+                ST0_SMDI2stats$SmallD)
+)
+gtable <- table_data %>%
+  gt() %>%
+  tab_header(
+    title = "Diversity Statistics between ANGSD settings") %>%
+  cols_label( 
+    a = "Altered Setting",
+    Average_tW = "Mean theta W",
+    Average_tP = "Mean theta Pi",
+    Ne_theta = "Theta W Effective population size",
+    Ne_pi = "Theta Pi Effective population size",
+    maxD = "Maximum Tajima's D",
+    minD = "Minimum Tajima's D",
+    BigD = "Contig with largest Tajima's D",
+    SmallD = "Contig with smallest Tajima's D"
+    ) %>% 
+  fmt_auto(table_data, 
+           columns = everything(), rows = everything(),
+           lg_num_pref = c("sci")) %>%
+  tab_options(
+    heading.align = "left"
+  )
 
+gtable
+?tab_options
 
-maxD = max(theta2$Tajima)
-minD = min(theta2$Tajima)
-
-BigD <- theta2[which(theta2$Tajima == maxD),]
-
-SmallD = theta2[which(theta2$Tajima == minD),]
-SmallD
 ```
 
 
