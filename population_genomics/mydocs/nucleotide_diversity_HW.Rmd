@@ -314,7 +314,7 @@ gtable <- table_data %>%
   tab_options(
     heading.align = "left"
   )
-
+?gt
 gtable
 
 
