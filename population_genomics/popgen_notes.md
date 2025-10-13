@@ -86,6 +86,26 @@ calculated smallest and largest Tajimas D.
     - set it to analyze for selection using Fst
     - `PCAngsd_allRS_selection.sh` and `RedSpruce_Selection.Rmd` for analysis
     
+    
+### Homework workflow 
+
+- I am doing the first homework option: changing ANGSD settings and finding the most optimal for analysis of nucleotide diversity
+- I decided to alter skiptriallelic (0 or 1) and setMindDepthInd (1 or 2) to assess the importance of using trialleic sites in calculations and controlling for depth of coverage
+- I created new scripts in "projects/eco_genomics_2025/population_genomics/myscripts/homework1"
+  -These were variations of the orginal "ANGSD.sh" and "ANGSD_doTheta.sh" scripts used in class for Red Spruce nucleotide diversity.
+  - created one script for each different setting, with a total of 5 scripts for both ANGSD.sh and ANGSD_doTheta.sh. Named according to the scheme: skipTriallelic: ST and setMinDepthInd: SMDI.
+  - wrapped these together in "diversity_wrapperHW_XXXX.sh" located in same directory.
+  - outputted files from ANGSD.sh to "mydata/homework1data"
+  - outputted files from ANGSD_doTheta.sh to "myresults/homework1results"
+- In "projects/eco_genomics_2025/population_genomics/mydocs" I created a R Markdown file named "nucleotide_diversity_HW.Rmd" to analyze my data.
+    - read in theta outputs
+    - calculated theta w and theta pi per individual site
+    - arranged sites by their contig and mapped theta pi by contig number to get manhattan plot
+    - plotted histogram of total number of sites within seqeuncing windows
+    - Calculated linear models for theta w ~ theta pi to get the slope of Tajimas D across all the reads.
+    - plotted theta w against theta pi to see deviation from a slope 1 regression
+      - all plots showed Tajimas D that was greater than 0. 
+    - created a gt table to display mean theta w/theta pi, Ne (calculated based on theta w and theta pi), min/max/mean Tajimas D, and the slope of theta w versus theta pi. 
 
 
 

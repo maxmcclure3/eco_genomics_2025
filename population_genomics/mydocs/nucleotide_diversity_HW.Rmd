@@ -218,22 +218,6 @@ ggarrange(WvPiST0, WvPiST1, WvPiSMDI1, WvPiSMDI2, WvPiST0_SMDI2,
 ```
 
 
-which windows have evidence of negative D and low nucleotide diversity ?
- - looking for selective sweep (demographic change), entire genome alteration
-```{r}
-theta2_ST0[which(theta2_ST0$Tajima<-1.5 & theta2_ST0$tPsite < 0.001),]
-theta2_ST1[which(theta2_ST1$Tajima<-1.5 & theta2_ST1$tPsite < 0.001),]
-theta2_SMDI1[which(theta2_SMDI1$Tajima<-1.5 & theta2_SMDI1$tPsite < 0.001),]
-theta2_SMDI2[which(theta2_SMDI2$Tajima<-1.5 & theta2_SMDI2$tPsite < 0.001),]
-theta2_ST0_SMDI2[which(theta2_ST0_SMDI2$Tajima<-1.5 & theta2_ST0_SMDI2$tPsite < 0.001),]
-
-
-summary(theta2_ST0)
-```
-
-
-
-
 
 ```{r}
 
