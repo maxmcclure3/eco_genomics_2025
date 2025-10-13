@@ -75,33 +75,32 @@ plotting histogram of total number of sites are in each seq window
 ```{r}
 SitesPerWindowST0 <- ggplot(data = theta2_ST0, aes(x = nSites)) +
   geom_histogram(bins = 50, fill = "lightblue", color = "black") +
-  geom_vline(xintercept = median(theta2_ST0$nSites), color = "red", linetype = "dashed") +
-   labs(title = "Distribution of windows with data", x = "Number of sites in 50kb window", y = "Frequency")
+  geom_vline(xintercept = median(theta2_ST0$nSites), color = "red", linetype = "dashed") #+
+   #labs(title = "Distribution of windows with data", x = "Number of sites in 50kb window", y = "Frequency")
 
 
 SitesPerWindowST1 <- ggplot(data = theta2_ST1, aes(x = nSites)) +
   geom_histogram(bins = 50, fill = "lightblue", color = "black") +
-  geom_vline(xintercept = median(theta2_ST1$nSites), color = "red", linetype = "dashed") +
-  labs(title = "Distribution of windows with data", x = "Number of sites in 50kb window", y = "Frequency")
+  geom_vline(xintercept = median(theta2_ST1$nSites), color = "red", linetype = "dashed") 
 
 SitesPerWindowSMDI1 <- ggplot(data = theta2_SMDI1, aes(x = nSites)) +
   geom_histogram(bins = 50, fill = "lightblue", color = "black") +
-  geom_vline(xintercept = median(theta2_SMDI1$nSites), color = "red", linetype = "dashed") +
-  labs(title = "Distribution of windows with data", x = "Number of sites in 50kb window", y = "Frequency")
+  geom_vline(xintercept = median(theta2_SMDI1$nSites), color = "red", linetype = "dashed") 
 
 SitesPerWindowSMDI2 <- ggplot(data = theta2_SMDI2, aes(x = nSites)) +
   geom_histogram(bins = 50, fill = "lightblue", color = "black") +
-  geom_vline(xintercept = median(theta2_SMDI2$nSites), color = "red", linetype = "dashed") +
-  labs(title = "Distribution of windows with data", x = "Number of sites in 50kb window", y = "Frequency")
+  geom_vline(xintercept = median(theta2_SMDI2$nSites), color = "red", linetype = "dashed") 
 
 SitesPerWindowST0_SMDI2 <- ggplot(data = theta2_ST0_SMDI2, aes(x = nSites)) +
   geom_histogram(bins = 50, fill = "lightblue", color = "black") +
-  geom_vline(xintercept = median(theta2_ST0_SMDI2$nSites), color = "red", linetype = "dashed") +
-  labs(title = "Distribution of windows with data", x = "Number of sites in 50kb window", y = "Frequency")
+  geom_vline(xintercept = median(theta2_ST0_SMDI2$nSites), color = "red", linetype = "dashed") 
 
 ggarrange(SitesPerWindowST0, SitesPerWindowST1, 
           SitesPerWindowSMDI1, SitesPerWindowSMDI2,
-          SitesPerWindowST0_SMDI2)
+          SitesPerWindowST0_SMDI2,
+          labels = "AUTO"
+          )
+?ggarrange
 ```
 
 plot pi
@@ -110,62 +109,112 @@ plot pi
 
 piST0 <- ggplot(theta2_ST0, aes(x=Chr, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  ylim(0,0.07) +
-  labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
-
+  theme_classic() +
+  labs(x = "Contig", y = "Theta Pi") +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()) +
+  ylim(0,0.055) #+
+  #labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
 
 piST1 <- ggplot(theta2_ST1, aes(x=Chr, y = tPsite, color = Chr)) +
-  geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  ylim(0,0.07) +
-  labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
+  geom_point(size = 0.75, shape = 8, show.legend = FALSE) + 
+  theme_classic() +
+  labs(x = "Contig", y = "Theta Pi") +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()) +
+  ylim(0,0.055) 
 
 piSMDI1 <- ggplot(theta2_SMDI1, aes(x=Chr, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  ylim(0,0.07) +
-  labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
+  theme_classic() +
+  labs(x = "Contig", y = "Theta Pi") +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()) +
+  
+  ylim(0,0.055)
 
 
 piSMDI2 <- ggplot(theta2_SMDI2, aes(x=Chr, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  ylim(0,0.07) +
-  labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
+  theme_classic() +
+  labs(x = "Contig", y = "Theta Pi") +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()) +
+  ylim(0,0.055) 
 
 piST0_SMDI2 <- ggplot(theta2_ST0_SMDI2, aes(x=Chr, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  ylim(0,0.07) +
-  labs(title = "Nucleotide diversity in 50kb windows for population 2032", x = "Scaffold", y = "Theta-pi")
-
-ggarrange(piST0, piST1, piSMDI1, piSMDI2, piST0_SMDI2)
+  theme_classic() +
+  labs(x = "Contig", y = "Theta Pi") +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()) +
+  ylim(0,0.055) 
+piST0_SMDI2
+ggarrange(piST0, piST1, piSMDI1, piSMDI2, piST0_SMDI2,
+          labels = "AUTO")
 ```
 
 
 ```{r}
+lmST0 <- lm(tPsite ~ tWsite, data = theta2_ST0)
+lmST1 <- lm(tPsite ~ tWsite, data = theta2_ST1)
+lmSMDI1 <- lm(tPsite ~ tWsite, data = theta2_SMDI1)
+lmSMDI2 <- lm(tPsite ~ tWsite, data = theta2_SMDI2)
+lmST0_SMDI2 <- lm(tPsite ~ tWsite, data = theta2_ST0_SMDI2)
+
+lms <- data.frame(setting = c("ST0","ST1", "SMDI1","SMDI2","ST0_SMDI2"),
+                   slope = c(lmST0 = lmST0$coefficients[2], 
+                             lmST1 = lmST1$coefficients[2],
+                             lmSMDI1 = lmSMDI1$coefficients[2], 
+                             lmSMDI2 = lmSMDI2$coefficients[2],
+                             lmST0_SMDI2 = lmST0_SMDI2$coefficients[2]))
+
+
 WvPiST0 <- ggplot(theta2_ST0, aes(x = tWsite, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
-  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
-
+  labs(x = "theta-W", y = "theta-pi") + 
+  geom_abline(slope = 1, intercept = 0, color = "black") +
+  geom_abline(slope = lms$slope[1], intercept = 0, 
+              linetype = "dashed", color = "red") +
+  theme_classic()
+WvPiST0
+?geom_abline
 WvPiST1 <- ggplot(theta2_ST1, aes(x = tWsite, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
-  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
+  labs(x = "theta-W", y = "theta-pi") + 
+  geom_abline(slope = 1, intercept = 0, color = "black") +
+  geom_abline(slope = lms$slope[2], intercept = 0, 
+              linetype = "dashed", color = "red") +
+  theme_classic()
 
 WvPiSMDI1 <- ggplot(theta2_SMDI1, aes(x = tWsite, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
-  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
+  labs(x = "theta-W", y = "theta-pi") + 
+  geom_abline(slope = 1, intercept = 0, color = "black") +
+  geom_abline(slope = lms$slope[3], intercept = 0, 
+              linetype = "dashed", color = "red") +
+  theme_classic()
 
 WvPiSMDI2 <- ggplot(theta2_SMDI2, aes(x = tWsite, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
-  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
+  labs(x = "theta-W", y = "theta-pi") + 
+  geom_abline(slope = 1, intercept = 0, color = "black") +
+  geom_abline(slope = lms$slope[4], intercept = 0, 
+              linetype = "dashed", color = "red") +
+  theme_classic()
 
 WvPiST0_SMDI2 <- ggplot(theta2_ST0_SMDI2, aes(x = tWsite, y = tPsite, color = Chr)) +
   geom_point(size = 0.75, shape = 8, show.legend = FALSE) +
-  labs(title = "theta w and theta pi plotted against each other", x = "theta-W", y = "theta-pi") + 
-  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "black")
+  labs(x = "theta-W", y = "theta-pi") + 
+  geom_abline(slope = 1, intercept = 0, color = "black") +
+  geom_abline(slope = lms$slope[5], intercept = 0, 
+              linetype = "dashed", color = "red") +
+  theme_classic()
 
-ggarrange(WvPiST0, WvPiST1, WvPiSMDI1, WvPiSMDI2, WvPiST0_SMDI2)
+ggarrange(WvPiST0, WvPiST1, WvPiSMDI1, WvPiSMDI2, WvPiST0_SMDI2,
+          labels = "AUTO")
+
+
 ```
 
 
@@ -187,7 +236,7 @@ summary(theta2_ST0)
 
 
 ```{r}
-install.packages("gt")
+
 library(gt)
 
 stats <- function(theta2){
@@ -202,9 +251,11 @@ stats <- function(theta2){
   minD = min(theta2$Tajima)
   BigD = theta2[which(theta2$Tajima == maxD),]
   SmallD =  theta2[which(theta2$Tajima == minD),]
+  mean_Tajima <- mean(theta2$Tajima)
   return(list(mean_tW = mean_tW, mean_tP = mean_tP, 
               Ne_theta = Ne_theta, Ne_pi = Ne_pi,
-              maxD = maxD, minD = minD, 
+              maxD = maxD, minD = minD,
+              meanTajima = mean_Tajima,
               BigD = BigD$Chr, SmallD = SmallD$Chr))
 }
 
@@ -237,13 +288,11 @@ table_data <- tibble(
   minD = c(ST0stats$minD, ST1stats$minD,
                 SMDI1stats$minD, SMDI2stats$minD, 
                 ST0_SMDI2stats$minD),
-  BigD = c(ST0stats$BigD, ST1stats$BigD,
-                SMDI1stats$BigD, SMDI2stats$BigD, 
-                ST0_SMDI2stats$BigD),
-  SmallD = c(ST0stats$SmallD, ST1stats$SmallD,
-                SMDI1stats$SmallD, SMDI2stats$SmallD, 
-                ST0_SMDI2stats$SmallD)
-)
+  meanTajima = c(ST0stats$meanTajima, ST1stats$meanTajima,
+                SMDI1stats$meanTajima, SMDI2stats$meanTajima, 
+                ST0_SMDI2stats$meanTajima),
+  slope = c(lms$slope[1], lms$slope[2], lms$slope[3], lms$slope[4], lms$slope[5]))
+
 gtable <- table_data %>%
   gt() %>%
   tab_header(
@@ -256,8 +305,8 @@ gtable <- table_data %>%
     Ne_pi = "Theta Pi Effective population size",
     maxD = "Maximum Tajima's D",
     minD = "Minimum Tajima's D",
-    BigD = "Contig with largest Tajima's D",
-    SmallD = "Contig with smallest Tajima's D"
+    meanTajima = "Mean Tajima's D", 
+    slope = "Slope of Theta W by Theta Pi"
     ) %>% 
   fmt_auto(table_data, 
            columns = everything(), rows = everything(),
@@ -267,7 +316,7 @@ gtable <- table_data %>%
   )
 
 gtable
-?tab_options
+
 
 ```
 
