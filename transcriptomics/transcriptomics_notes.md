@@ -57,3 +57,15 @@ DEseq2 start of data analysis -
 -   heat map to compare LFC between generations
 -   created a Euler plot for generations 1-3 -manually did calculations
     in Rmd file
+    
+### 20251023: running gene ontology
+
+- using TopGO to generate a gene ontology on our DEseq2 data
+- created a new Rmd file ("transcriptomics/mydata/DEseqtoTopGO.Rmd") 
+- reran DEseq2 in this file, seperated by generation and sorted by pvalue
+- plotted adjusted pvalue distriubution, -log10(padj), and wald stat of our DEseq2 analysis
+  - plotted -log10(padj) on a density plot
+- Ran TopGo using the GO.db and topGO libraries 
+  - ran generatiuon 2 at first, because we know there is a lot of differntial expression 
+  - plotted and knitted into .html file in my docs
+    - "DEseq2toTopGO.html"
