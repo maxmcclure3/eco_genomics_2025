@@ -69,3 +69,22 @@ DEseq2 start of data analysis -
   - ran generatiuon 2 at first, because we know there is a lot of differntial expression 
   - plotted and knitted into .html file in my docs
     - "DEseq2toTopGO.html"
+    
+### 20251029: Visualizing network correlation using WGCNA
+- created a new .Rmd file to run WGCNA on our DEseq2 data
+  - "~/projects/eco_genomics_2025/transcriptomics/mydocs/WGCNA_tonsa.Rmd"
+- imported in counts matrixm from "/mydata" 
+- ran DEseq2 and stored it in the dds object
+- filtered transcripts out that have less than 15 reads in less than 75% of the 24 samples (18)
+- transformed dds using vriance stabilization
+- imported phenotypic data (upper lethal temp (ULT) 
+  - from "/gpfs1/cl/ecogen/pbio6800/Transcriptomics/enrichment/WGCNA_TraitData.csv"
+- calculated variance for each gene and filtered out genes with lowest 50% of variance.
+- calculated adjacency matrix over various soft-thresholding powers
+  - visualized scale free topology model fit and mean connectivity
+- calculated modules using blockwiseModules function
+- calculated eigengenes for each module
+  - made a plot to visualize eigengenes in every module.
+- calculated correlation between eigengenes and ULT using simple cor function
+  - correlations plotted as a heatmap
+- 
