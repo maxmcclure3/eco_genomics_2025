@@ -397,7 +397,64 @@ topGO_F <- function(data){
   
 }
 
+topGO_F_test <- function(dds, res_df, go_tsv, generation = "G2") {
+  # 1) results + significant set
+  res_df <- as.data.frame(res_df)
+  res_df$geneID <- rownames(res_df)
+  res_sig <- subset(res_df, padj < 0.05 & abs(log2FoldChange) > 1)
 
+  # 2) read GO map (two columns: geneID, GO; GO terms separated by ;)
+  go_raw <- read.delim(go_tsv, header = TRUE, sep = "\t") %>%
+    select(geneID, GO) %>%
+    slice(-1, -2) %>%                 # remove header rows if your file has them
+    tidyr::drop_na(GO) %>%
+    filter(GO != "")
+
+  # 3) collapse to one row per gene and split terms
+  gene2GO_tbl <- go_raw %>%
+    group_by(geneID) %>%
+    summarise(GO = paste(unique(GO), collapse = ";"), .groups = "drop")
+
+  gene2GO <- setNames(gene2GO_tbl$GO, as.character(gene2GO_tbl$geneID))
+  gene2GO <- lapply(gene2GO, function(x) unique(unlist(strsplit(x, ";"))))
+
+  # diagnostics on mapping
+  if (length(gene2GO) == 0L || all(lengths(gene2GO) == 0L)) {
+    stop("gene2GO is empty: no usable GO annotations were parsed.")
+  }
+
+  # 4) define gene universe and selection
+  all_genes <- names(gene2GO)
+  geneList  <- as.integer(all_genes %in% res_sig$geneID)
+  names(geneList) <- all_genes
+
+  # diagnostics on selection
+  if (!any(geneList == 1L)) {
+    stop("No selected genes (padj<0.05 & |LFC|>1) are present in gene2GO.")
+  }
+
+  # 5) build and run topGO
+  GOdata <- new("topGOdata",
+    description = sprintf("%s DEGs GO enrichment", generation),
+    ontology   = "BP",
+    allGenes   = geneList,
+    geneSel    = function(x) x == 1L,
+    nodeSize   = 5,
+    annot      = annFUN.gene2GO,
+    gene2GO    = gene2GO
+  )
+
+  result <- runTest(GOdata, algorithm = "parentChild", statistic = "fisher")
+
+  res_table <- GenTable(GOdata,
+                        classicFisher = result,
+                        topNodes = length(usedGO(GOdata))) %>%
+    mutate(classicFisher = as.numeric(classicFisher),
+           Annotated = as.numeric(Annotated),
+           Significant = as.numeric(Significant))
+
+  return(res_table)
+}
 topGO_G1 <- topGO_F(resG1_CvT_HW)
 ```
 
