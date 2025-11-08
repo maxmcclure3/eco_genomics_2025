@@ -60,7 +60,8 @@ vsd <- vst(dds, blind=FALSE)
 
 ```{r}
 # Import the phenotypic data 
-
+setwd("/users/m/r/mrmcclur/projects/eco_genomics_2025/transcriptomics/mydata")
+getwd()
 ULT_trait <- read.csv("WGCNA_TraitData.csv", 
                       header = TRUE, 
                       stringsAsFactors = FALSE,
@@ -202,9 +203,9 @@ module_eigengene.metadata <- merge(groups, heatmap.data, by = 'row.names')
 
 library(Rmisc)
 #Create a summary data frame of a particular module eigengene information
-MEmidnightblue_summary <- summarySE(module_eigengene.metadata, measurevar="MElightcyan", groupvars=c("generation","line"))
+MElightcyan_summary <- summarySE(module_eigengene.metadata, measurevar="MElightcyan", groupvars=c("generation","line"))
 
-MEmidnightblue_summary <- MEmidnightblue_summary %>%
+MElightcyan_summary <- MElightcyan_summary %>%
   mutate(line = case_when(
     line == "treatment" ~ "22 at G1",
     line == "control" ~ "Ambient",
@@ -213,7 +214,7 @@ MEmidnightblue_summary <- MEmidnightblue_summary %>%
 
 
 #Plot a line interaction plot of a particular module eigengene
-ggplot(MEmidnightblue_summary, aes(x=as.factor(generation), y=MElightcyan, color=line, fill = line, shape = line)) +
+ggplot(MElightcyan_summary, aes(x=as.factor(generation), y=MElightcyan, color=line, fill = line, shape = line)) +
   geom_point(size=3, stroke = 1.5 ) +
   geom_errorbar(aes(ymin=MElightcyan-se, ymax=MElightcyan+se), width=.1, alpha = 0.3) +
   geom_line(aes(color=line, group=line, linetype = line)) +
