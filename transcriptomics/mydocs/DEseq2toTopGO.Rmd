@@ -204,7 +204,7 @@ gene2GO <- tonsa_go %>%
   filter(!is.na(GO) & GO != "") %>%
   group_by(geneID) %>%
   summarise(GO = list(unique(GO)), .groups = "drop") %>%
-  with(setNames(GO, geneID))
+  with(setNames(tonsa_go$GO, tonsa_go$geneID))
 
 # Split semicolon-separated GO terms
 gene2GO <- lapply(gene2GO, function(x) unlist(strsplit(x, ";")))
