@@ -1,0 +1,770 @@
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_10_ACGTCT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_10_ACGTCT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_10_ACGTCT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_10_ACGTCT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_5_GTGTAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_5_GTGTAG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_5_GTGTAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_5_GTGTAG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_D_H_0_CGCAAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_D_H_0_CGCAAC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_D_H_0_CGCAAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_D_H_0_CGCAAC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_D_H_10_CAGCGT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_D_H_10_CAGCGT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_D_H_10_CAGCGT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_D_H_10_CAGCGT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_0_AATAGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_0_AATAGC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_0_AATAGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_0_AATAGC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_10_TCGAGG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_10_TCGAGG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_10_TCGAGG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_10_TCGAGG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_5_CCGCAA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_5_CCGCAA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_5_CCGCAA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_H_5_CCGCAA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BLANK_ACATTA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BLANK_ACATTA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BLANK_ACATTA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BLANK_ACATTA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_C_0_ACCGTG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_C_0_ACCGTG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_C_0_ACCGTG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_C_0_ACCGTG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_C_10_GCATGG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_C_10_GCATGG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_C_10_GCATGG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_C_10_GCATGG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_0_GCGAAT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_0_GCGAAT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_0_GCGAAT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_0_GCGAAT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_10_GATTGT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_10_GATTGT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_10_GATTGT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_10_GATTGT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_5_GGTATA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_5_GGTATA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_5_GGTATA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_D_H_5_GGTATA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_H_0_TGGATT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_H_0_TGGATT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_H_0_TGGATT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_H_0_TGGATT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_H_10_TTCCGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_H_10_TTCCGC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_H_10_TTCCGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/BRU_05_H_10_TTCCGC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_0_GGCTGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_0_GGCTGC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_0_GGCTGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_0_GGCTGC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_10_AACGCC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_10_AACGCC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_10_AACGCC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_10_AACGCC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_5_TTAACT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_5_TTAACT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_5_TTAACT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_C_5_TTAACT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_D_H_0_ATAAGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_D_H_0_ATAAGA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_D_H_0_ATAAGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_D_H_0_ATAAGA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_D_H_10_AAGACA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_D_H_10_AAGACA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_D_H_10_AAGACA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_D_H_10_AAGACA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_0_ATTGGT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_0_ATTGGT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_0_ATTGGT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_0_ATTGGT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_10_CAAGCA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_10_CAAGCA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_10_CAAGCA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_10_CAAGCA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_5_GGTGAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_5_GGTGAG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_5_GGTGAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/CAM_02_H_5_GGTGAG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_C_0_CAGATG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_C_0_CAGATG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_C_0_CAGATG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_C_0_CAGATG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_C_10_ACAACG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_C_10_ACAACG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_C_10_ACAACG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_C_10_ACAACG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_0_CGGTTA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_0_CGGTTA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_0_CGGTTA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_0_CGGTTA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_10_TACCTT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_10_TACCTT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_10_TACCTT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_10_TACCTT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_5_GACGAT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_5_GACGAT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_5_GACGAT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_D_H_5_GACGAT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_H_0_TCAGGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_H_0_TCAGGA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_H_0_TCAGGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_H_0_TCAGGA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_H_10_ATGGCG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_H_10_ATGGCG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_H_10_ATGGCG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ESC_01_H_10_ATGGCG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_C_0_ACCTAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_C_0_ACCTAC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_C_0_ACCTAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_C_0_ACCTAC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_C_10_TATGTC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_C_10_TATGTC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_C_10_TATGTC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_C_10_TATGTC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_D_H_0_CCAATT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_D_H_0_CCAATT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_D_H_0_CCAATT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_D_H_0_CCAATT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_D_H_10_CGCCTG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_D_H_10_CGCCTG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_D_H_10_CGCCTG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_D_H_10_CGCCTG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_0_AACCGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_0_AACCGA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_0_AACCGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_0_AACCGA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_10_CGATCT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_10_CGATCT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_10_CGATCT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_10_CGATCT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_5_ATGAAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_5_ATGAAC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_5_ATGAAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/JAY_02_H_5_ATGAAC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_C_0_CACACT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_C_0_CACACT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_C_0_CACACT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_C_0_CACACT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_C_10_CGTCGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_C_10_CGTCGC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_C_10_CGTCGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_C_10_CGTCGC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_D_H_0_CAATGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_D_H_0_CAATGC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_D_H_0_CAATGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_D_H_0_CAATGC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_D_H_10_TGACAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_D_H_10_TGACAC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_D_H_10_TGACAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_D_H_10_TGACAC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_H_0_CTCCAT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_H_0_CTCCAT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_H_0_CTCCAT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_H_0_CTCCAT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_H_10_TAGGCT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_H_10_TAGGCT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_H_10_TAGGCT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/KAN_04_H_10_TAGGCT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_0_AGTACT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_0_AGTACT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_0_AGTACT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_0_AGTACT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_10_CCTAAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_10_CCTAAG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_10_CCTAAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_10_CCTAAG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_5_CAACAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_5_CAACAG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_5_CAACAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_C_5_CAACAG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_D_H_0_AGATAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_D_H_0_AGATAG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_D_H_0_AGATAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_D_H_0_AGATAG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_D_H_10_CAGGAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_D_H_10_CAGGAC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_D_H_10_CAGGAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_D_H_10_CAGGAC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_H_0_TGGCGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_H_0_TGGCGA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_H_0_TGGCGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_H_0_TGGCGA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_H_10_GACATC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_H_10_GACATC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_H_10_GACATC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/LOL_02_H_10_GACATC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_0_ACAGAT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_0_ACAGAT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_0_ACAGAT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_0_ACAGAT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_10_TGTGCA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_10_TGTGCA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_10_TGTGCA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_10_TGTGCA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_5_AGTTGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_5_AGTTGA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_5_AGTTGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_C_5_AGTTGA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_0_CTCTCG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_0_CTCTCG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_0_CTCTCG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_0_CTCTCG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_10_TTTATG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_10_TTTATG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_10_TTTATG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_10_TTTATG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_5_AAGCTC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_5_AAGCTC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_5_AAGCTC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_D_H_5_AAGCTC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_0_AATCCG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_0_AATCCG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_0_AATCCG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_0_AATCCG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_10_ATACTG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_10_ATACTG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_10_ATACTG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_10_ATACTG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_5_CGAAGG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_5_CGAAGG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_5_CGAAGG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/MMF_13_H_5_CGAAGG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_0_AATGAA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_0_AATGAA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_0_AATGAA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_0_AATGAA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_10_TTGGTA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_10_TTGGTA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_10_TTGGTA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_10_TTGGTA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_5_TCGTTC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_5_TCGTTC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_5_TCGTTC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_C_5_TCGTTC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_0_TCTTAA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_0_TCTTAA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_0_TCTTAA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_0_TCTTAA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_10_GTGCCA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_10_GTGCCA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_10_GTGCCA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_10_GTGCCA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_5_CACTAA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_5_CACTAA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_5_CACTAA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_D_H_5_CACTAA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_0_GTTACC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_0_GTTACC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_0_GTTACC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_0_GTTACC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_10_GTAGAA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_10_GTAGAA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_10_GTAGAA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_10_GTAGAA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_5_GAAGTG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_5_GAAGTG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_5_GAAGTG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/NOR_02_H_5_GAAGTG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_0_GATCAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_0_GATCAC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_0_GATCAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_0_GATCAC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_10_GCTCGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_10_GCTCGA_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_10_GCTCGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_10_GCTCGA_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_5_TGCACG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_5_TGCACG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_5_TGCACG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_C_5_TGCACG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_0_ATATCC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_0_ATATCC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_0_ATATCC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_0_ATATCC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_10_GTCAGG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_10_GTCAGG_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_10_GTCAGG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_10_GTCAGG_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_5_CTAGTC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_5_CTAGTC_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_5_CTAGTC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_D_H_5_CTAGTC_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_H_0_ACCAGT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_H_0_ACCAGT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_H_0_ACCAGT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_H_0_ACCAGT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_H_10_GGAGGT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_H_10_GGAGGT_R1.fastq.gz.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_H_10_GGAGGT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/XBM_07_H_10_GGAGGT_R1.fastq.gz.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+Exception in thread "main" java.lang.AssertionError: Can't find reference file adpaters
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1098)
+	at jgi.BBDuk.modifyRefPath(BBDuk.java:1059)
+	at jgi.BBDuk.<init>(BBDuk.java:659)
+	at jgi.BBDuk.main(BBDuk.java:80)

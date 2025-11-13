@@ -1,0 +1,8 @@
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1 out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads//gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1.clean.fq ref=adpaters ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya = 10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads//gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1.clean.fq, ref=adpaters, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya, =, 10]
+Version 39.46
+
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at jgi.BBDuk.<init>(BBDuk.java:162)
+	at jgi.BBDuk.main(BBDuk.java:80)

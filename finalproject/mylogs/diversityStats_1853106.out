@@ -1,0 +1,34 @@
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.020 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.080 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Exception in thread "main" java.lang.RuntimeException: java.io.FileNotFoundException: /gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz.clean.fq (Permission denied)
+	at fileIO.ReadWrite.getRawOutputStream(ReadWrite.java:474)
+	at fileIO.ReadWrite.getOutputStream(ReadWrite.java:420)
+	at stream.ReadStreamWriter.<init>(ReadStreamWriter.java:73)
+	at stream.ReadStreamByteWriter.<init>(ReadStreamByteWriter.java:18)
+	at stream.ConcurrentGenericReadOutputStream.<init>(ConcurrentGenericReadOutputStream.java:43)
+	at stream.ConcurrentReadOutputStream.getStream(ConcurrentReadOutputStream.java:71)
+	at stream.ConcurrentReadOutputStream.getStream(ConcurrentReadOutputStream.java:35)
+	at jgi.BBDuk.spawnProcessThreads(BBDuk.java:2002)
+	at jgi.BBDuk.process2(BBDuk.java:1263)
+	at jgi.BBDuk.process(BBDuk.java:1159)
+	at jgi.BBDuk.main(BBDuk.java:83)
+Caused by: java.io.FileNotFoundException: /gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1/ASC_06_C_0_GAGTCC_R1.fastq.gz.clean.fq (Permission denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:150)
+	at fileIO.ReadWrite.getRawOutputStream(ReadWrite.java:472)
+	... 10 more
+[2025-11-13T16:59:02.138] error: *** JOB 1853106 ON node401 CANCELLED AT 2025-11-13T16:59:02 DUE to SIGNAL Terminated ***
