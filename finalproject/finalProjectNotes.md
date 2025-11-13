@@ -16,7 +16,16 @@
   - At the moment, I am unsure as to which cleaning program I will use
   - I will have to clean the reads: trim polyA tails, remove adapter sequences
     - I am not sure how the different treatments and populations are organized and tagged. Were they pooled and sequenced all together or done individually? This will change the way that I attempt to clean them
-  - 
+
+
+### Nov 13th open lab
+  - I finished figureing out the bbduk input and got it to run fully
+    - script is "myscripts/bbduk_spruce.sh"
+    - output in "/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads"
+  - planning on getting salmon to work next class. Mapping to reference genome
+    - I will need an indexing file (??), will have to ask about this.
+  - otherwise, mapping will be fairly simple and similar to what we did in class. 
+  
   
   
   
