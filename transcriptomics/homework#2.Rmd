@@ -22,7 +22,7 @@ library(Rmisc)
 
 ## initial code chunk: read in counts table, run DEseq2, variance stabilization, read in trait data, and run WGCNA
 ```{r}
-
+setwd("~/projects/eco_genomics_2025/transcriptomics/mydata")
 countsTable <- read.csv("counts_table.csv", header=TRUE, row.names=1)
 dim(countsTable)
 
@@ -151,7 +151,7 @@ plotDendroAndColors(bwnet$dendrograms[[1]], cbind(bwnet$unmergedColors, bwnet$co
 
 ## visualize significant eigengenes
   - MElightcyan is significant
-```{r}
+```{r, eval = FALSE, incude = FALSE, echo = FALSE}
 nSamples <- nrow(norm.counts) #
 nGenes <- ncol(norm.counts) #
 # correlation between module eigengenes and trait (ULT)
@@ -229,6 +229,9 @@ geneIDs <- module.gene.mapping  %>%
 geneIDs_gray <- module.gene.mapping %>%
   filter(`bwnet$colors` == "gray") %>%
   rownames()
+geneIDs_red <- module.gene.mapping %>%
+  filter(`bwnet$colors` == "red") %>%
+  rownames()
 
 
 ###extract pvalues for each of our generations
@@ -246,6 +249,8 @@ resG1_CvT_totalHW <- interestgenes.and.p(geneIDs, dds,
                                          generation = "G1")
 resG1_CvT_grayHW <- interestgenes.and.p(geneIDs_gray, dds,
                                         generation = "G1")
+resG1_CvT_redHW <- interestgenes.and.p(geneIDs_red, dds,
+                                       generation = "G1")
 resG1_CvT_cyanHW <- interestgenes.and.p(geneIDs_lightcyan, dds, 
                                               generation = "G1")
 resG2_CvT_cyanHW <- interestgenes.and.p(geneIDs_lightcyan, dds,
@@ -358,6 +363,7 @@ G3_plotstuff2 <- plotstuff2(resG3_CvT_HW,"3")
 G4_plotstuff2 <- plotstuff2(resG4_CvT_HW,"4")
 
 G1total_plotstuff <- plotstuff(resG1_CvT_totalHW, "1")
+G1red_plotstuff <- plotstuff(resG1_CvT_redHW, "1")
 
 ```
 
@@ -675,15 +681,136 @@ TopGO_plot <- function(df, title, categories = 30) {
     coord_cartesian(clip = "off")
 }
 
-
-topGO_lightcyan <-topGOshbang(resG1_CvT_cyanHW)
-topGO_greenyellow <- topGOshbang(resG1_CvT_gyHW)
-topGO_plot_lightcyan <- TopGO_plot(topGO_lightcyan, "Gen1 GO enrichment (Light Cyan)", 24)
-topGO_plot_greenyellow <- TopGO_plot(topGO_greenyellow, "Gen1 GO enrichment (Green Yellow)", 24)
-ggarrange(topGO_plot_greenyellow, topGO_plot_lightcyan)
-
-topGO_total <- topGOshbang(resG1_CvT_totalHW)
-topGO_plot_total <- TopGO_plot(topGO_total, "Gen1 Go enrichment (total) ", 24)
-topGO_gray <- topGOshbang(resG1_CvT_grayHW)
 ```
 
+```{r}
+topGO_total <- topGOshbang(resG1_CvT_totalHW)
+topGO_plot_total <- TopGO_plot(topGO_total, "Gen1 Go enrichment (total) ", 24)
+```
+
+```{r} 
+#red looks great. lets just run a bunch
+topGO_red <- topGOshbang(resG1_CvT_redHW)
+TopGO_plot(topGO_red, "Gen1 GO enrichment (red)", 20)
+```
+
+```{r}
+# yellow is good
+#yellow gen1
+geneIDs_yellow <- module.gene.mapping %>%
+  filter(`bwnet$colors` == "yellow") %>%
+  rownames()
+resG1_CvT_yellowHW <- interestgenes.and.p(geneIDs_yellow, dds,
+                                          generation = "G1")
+topGO_yellow <- topGOshbang(resG1_CvT_yellowHW)
+TopGO_plot(topGO_yellow, "Gen1 GO enrichment (yellow)", 20)
+```
+magenta
+```{r}
+geneIDs_magenta <- module.gene.mapping %>%
+  filter(`bwnet$colors` == "magenta") %>%
+  rownames()
+resG1_CvT_magentaHW <- interestgenes.and.p(geneIDs_magenta, dds,
+                                        generation = "G1")
+topGO_magenta <- topGOshbang(resG1_CvT_magentaHW)
+TopGO_plot(topGO_magenta, "Gen1 GO enrichment (magenta)", 20)
+```
+
+```{r}
+geneIDs_brown <- module.gene.mapping %>%
+  filter(`bwnet$colors` == "brown") %>%
+  rownames()
+resG1_CvT_brownHW <- interestgenes.and.p(geneIDs_brown, dds,
+                                        generation = "G1")
+topGO_brown <- topGOshbang(resG1_CvT_brownHW)
+TopGO_plot(topGO_brown, "Gen1 GO enrichment (Brown)", 20)
+```
+
+
+Revigo
+```{r}
+revigo <- function(data, color = "color"){
+# Select only the columns REVIGO needs
+revigo_input <- data[, c("GO.ID", "classicFisher")]
+
+sigRes <- revigo_input[as.numeric(revigo_input$classicFisher) < 0.05, ]
+
+# Rename columns for clarity
+colnames(sigRes) <- c("GO.ID", "pValue")
+
+# Save as txt to upload to REVIGO
+write.table(sigRes, file = sprintf("topGOsig_for_REVIGO_%s.txt", color), sep = "\t", row.names = FALSE, quote = FALSE)
+}
+
+revigo(topGO_magenta, "magenta")
+revigo(topGO_red,"red")
+revigo(topGO_yellow, "yellow")
+revigo(topGO_brown, "brown")
+revigo(topGO_total, "total")
+
+```
+
+revigo scatterplots
+```{r}
+library(readr)
+brown <- read_tsv("brown_scatterplot.tsv", col_names = TRUE)
+magenta <- read_tsv("magenta_scatterplot.tsv", col_names = TRUE)
+yellow <- read_tsv("yellow_scatterplot.tsv", col_names = TRUE)
+red <- read_tsv("red_scatterplot.tsv", col_names = TRUE)
+total <- read_tsv("total_scatterplot.tsv", col_names = TRUE) 
+total <- total %>% 
+  filter(PC_0 != "null") %>%
+  filter(PC_1 != "null") 
+total$PC_0 <- as.numeric(total$PC_0)
+total$PC_1 <- as.numeric(total$PC_1)
+
+geom_point_color <- function(color, color_id = "brown") {
+  color <- color %>% 
+    mutate(Valuescaled = Value / min(Value))
+  color <- color %>%
+    filter(PC_0 != "null") %>%
+    filter(PC_1 != "null")
+  color$PC_0 <- as.numeric(color$PC_0)
+  color$PC_1 <- as.numeric(color$PC_1)
+  p <- NULL
+  p$point <- geom_point(data = color, aes(PC_0,PC_1), 
+             color = sprintf("%s", color_id),
+             size = color$LogSize * 1.75, 
+             alpha = color$Valuescaled)
+    
+  p$text <- geom_text(data = color, aes(PC_0, PC_1, label = Name))
+return(p)
+}
+
+brownpoint <- geom_point_color(brown, "brown")
+magentapoint <- geom_point_color(magenta,"magenta")
+yellowpoint <- geom_point_color(yellow, "yellow") 
+redpoint <- geom_point_color(red, "red")
+
+ggplot() +
+  geom_point(data = total, aes(PC_0, PC_1), color = "lightgray",
+             size = 10,
+             alpha = 0.2,
+             stroke = NA) +
+  brownpoint$point + 
+  magentapoint$point +
+  yellowpoint$point +
+  redpoint$point +
+  theme_bw() +
+  labs(x = "Semantic Space X", y = "Semantic Space Y") +
+  geom_text(aes(-4, -4.9), label = "Stress response",
+            alpha = 0.6,
+            size = 3) +
+  geom_text(aes(-6.3, 2.8), label = "RNA-based metabolism",
+            alpha = 0.6,
+            size = 3) +
+  geom_text(aes(3.7, 6.3), label = "Cytoskeleton-mediated
+            cellular organization",
+            alpha = 0.6,
+            size = 3) +
+  geom_text(aes(3.5, -1.5), label = "          Embryonic 
+            devlopment",
+            alpha = 0.6,
+            size = 3) 
+
+```
