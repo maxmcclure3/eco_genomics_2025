@@ -677,7 +677,7 @@ TopGO_plot <- function(df, title, categories = 30) {
     ggtitle(title) +
     theme_minimal() +
     theme(plot.margin = margin(10, 100, 10, 10),
-          axis.text.y = element_text(size = 10, hjust = 1)) +
+          axis.text.y = element_text(size = 11.5, hjust = 1)) +
     coord_cartesian(clip = "off")
 }
 
@@ -685,13 +685,13 @@ TopGO_plot <- function(df, title, categories = 30) {
 
 ```{r}
 topGO_total <- topGOshbang(resG1_CvT_totalHW)
-topGO_plot_total <- TopGO_plot(topGO_total, "Gen1 Go enrichment (total) ", 24)
+topGO_plot_total <- TopGO_plot(topGO_total, "Gen1 Go enrichment (total) ", 15)
 ```
 
 ```{r} 
 #red looks great. lets just run a bunch
 topGO_red <- topGOshbang(resG1_CvT_redHW)
-TopGO_plot(topGO_red, "Gen1 GO enrichment (red)", 20)
+topGO_plot_red <- TopGO_plot(topGO_red, "Gen1 GO enrichment (red)", 15)
 ```
 
 ```{r}
@@ -703,7 +703,7 @@ geneIDs_yellow <- module.gene.mapping %>%
 resG1_CvT_yellowHW <- interestgenes.and.p(geneIDs_yellow, dds,
                                           generation = "G1")
 topGO_yellow <- topGOshbang(resG1_CvT_yellowHW)
-TopGO_plot(topGO_yellow, "Gen1 GO enrichment (yellow)", 20)
+topGO_plot_yellow <- TopGO_plot(topGO_yellow, "Gen1 GO enrichment (yellow)", 15)
 ```
 magenta
 ```{r}
@@ -713,7 +713,7 @@ geneIDs_magenta <- module.gene.mapping %>%
 resG1_CvT_magentaHW <- interestgenes.and.p(geneIDs_magenta, dds,
                                         generation = "G1")
 topGO_magenta <- topGOshbang(resG1_CvT_magentaHW)
-TopGO_plot(topGO_magenta, "Gen1 GO enrichment (magenta)", 20)
+topGO_plot_magenta <- TopGO_plot(topGO_magenta, "Gen1 GO enrichment (magenta)", 15)
 ```
 
 ```{r}
@@ -723,12 +723,13 @@ geneIDs_brown <- module.gene.mapping %>%
 resG1_CvT_brownHW <- interestgenes.and.p(geneIDs_brown, dds,
                                         generation = "G1")
 topGO_brown <- topGOshbang(resG1_CvT_brownHW)
-TopGO_plot(topGO_brown, "Gen1 GO enrichment (Brown)", 20)
+topGO_plot_brown <- TopGO_plot(topGO_brown, "Gen1 GO enrichment (Brown)", 15)
 ```
 
 
 Revigo
 ```{r}
+#dont need to reun
 revigo <- function(data, color = "color"){
 # Select only the columns REVIGO needs
 revigo_input <- data[, c("GO.ID", "classicFisher")]
@@ -813,4 +814,13 @@ ggplot() +
             alpha = 0.6,
             size = 3) 
 
+```
+
+
+```{r}
+library(ggpubr)
+topGO_plot_brown
+topGO_plot_magenta
+topGO_plot_red
+topGO_plot_yellow
 ```
