@@ -25,7 +25,7 @@
 
 bbduk="/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/bbduk.sh"
 cd /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap
-RAWDATA="/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1"
+RAWDATA="/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2"
 OUTPUT="/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads"
 
 for READ in ${RAWDATA}/*;do
