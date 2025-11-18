@@ -25,14 +25,14 @@
 
 bbduk="/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/bbduk.sh"
 cd /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap
-RAWDATA="/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run1"
-OUTPUT="/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run1"
+RAWDATA="/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2"
+OUTPUT="/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2"
 
 for READ in ${RAWDATA}/*;do
 
 NAME=`basename ${READ}`
 
-$bbduk in=${READ} out=${OUTPUT}/${NAME}.clean.fq \
+$bbduk in=${READ} out=${OUTPUT}/${NAME}_run2.clean.fq \
 ref="/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa" \
 ktrim=r \
 k=23 \

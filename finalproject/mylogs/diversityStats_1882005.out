@@ -1,0 +1,1635 @@
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_C_0_GAGTCC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_C_0_GAGTCC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_C_0_GAGTCC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_C_0_GAGTCC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.030 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.084 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.028 seconds.
+Processing time:   		2.322 seconds.
+
+Input:                  	4684389 reads 		398173065 bases.
+Polymer-trimmed:        	24411 reads (0.52%) 	417673 bases (0.10%)
+KTrimmed:               	199610 reads (4.26%) 	8270828 bases (2.08%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	9255 reads (0.20%) 	8688501 bases (2.18%)
+Result:                 	4675134 reads (99.80%) 	389484564 bases (97.82%)
+
+Time:                         	2.435 seconds.
+Reads Processed:       4684k 	1924.00k reads/sec
+Bases Processed:        398m 	163.54m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_C_10_ACGTCT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_C_10_ACGTCT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_C_10_ACGTCT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_C_10_ACGTCT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.014 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.087 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		3.926 seconds.
+
+Input:                  	4982799 reads 		423537915 bases.
+Polymer-trimmed:        	32021 reads (0.64%) 	541410 bases (0.13%)
+KTrimmed:               	167960 reads (3.37%) 	6855261 bases (1.62%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	3356 reads (0.07%) 	7396671 bases (1.75%)
+Result:                 	4979443 reads (99.93%) 	416141244 bases (98.25%)
+
+Time:                         	4.025 seconds.
+Reads Processed:       4982k 	1237.84k reads/sec
+Bases Processed:        423m 	105.22m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_C_5_GTGTAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_C_5_GTGTAG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_C_5_GTGTAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_C_5_GTGTAG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.015 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.064 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.014 seconds.
+Processing time:   		3.056 seconds.
+
+Input:                  	4339995 reads 		368899575 bases.
+Polymer-trimmed:        	39321 reads (0.91%) 	673739 bases (0.18%)
+KTrimmed:               	140245 reads (3.23%) 	5512133 bases (1.49%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	2904 reads (0.07%) 	6185872 bases (1.68%)
+Result:                 	4337091 reads (99.93%) 	362713703 bases (98.32%)
+
+Time:                         	3.134 seconds.
+Reads Processed:       4339k 	1384.62k reads/sec
+Bases Processed:        368m 	117.69m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_D_H_0_CGCAAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_D_H_0_CGCAAC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_D_H_0_CGCAAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_D_H_0_CGCAAC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.013 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.069 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		3.636 seconds.
+
+Input:                  	5184731 reads 		440702135 bases.
+Polymer-trimmed:        	121526 reads (2.34%) 	1961838 bases (0.45%)
+KTrimmed:               	146279 reads (2.82%) 	6404862 bases (1.45%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	17431 reads (0.34%) 	8366700 bases (1.90%)
+Result:                 	5167300 reads (99.66%) 	432335435 bases (98.10%)
+
+Time:                         	3.718 seconds.
+Reads Processed:       5184k 	1394.43k reads/sec
+Bases Processed:        440m 	118.53m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_D_H_10_CAGCGT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_D_H_10_CAGCGT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_D_H_10_CAGCGT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_D_H_10_CAGCGT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.017 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.076 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		3.226 seconds.
+
+Input:                  	4502508 reads 		382713180 bases.
+Polymer-trimmed:        	131293 reads (2.92%) 	2193430 bases (0.57%)
+KTrimmed:               	226515 reads (5.03%) 	8913926 bases (2.33%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	13666 reads (0.30%) 	11107356 bases (2.90%)
+Result:                 	4488842 reads (99.70%) 	371605824 bases (97.10%)
+
+Time:                         	3.314 seconds.
+Reads Processed:       4502k 	1358.49k reads/sec
+Bases Processed:        382m 	115.47m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_H_0_AATAGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_H_0_AATAGC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_H_0_AATAGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_H_0_AATAGC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.015 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.068 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.023 seconds.
+Processing time:   		3.806 seconds.
+
+Input:                  	6101634 reads 		518638890 bases.
+Polymer-trimmed:        	108724 reads (1.78%) 	1895143 bases (0.37%)
+KTrimmed:               	198497 reads (3.25%) 	8298506 bases (1.60%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	10261 reads (0.17%) 	10193649 bases (1.97%)
+Result:                 	6091373 reads (99.83%) 	508445241 bases (98.03%)
+
+Time:                         	3.898 seconds.
+Reads Processed:       6101k 	1565.20k reads/sec
+Bases Processed:        518m 	133.04m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_H_10_TCGAGG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_H_10_TCGAGG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_H_10_TCGAGG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_H_10_TCGAGG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.014 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.067 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		3.625 seconds.
+
+Input:                  	5027645 reads 		427349825 bases.
+Polymer-trimmed:        	127915 reads (2.54%) 	2168407 bases (0.51%)
+KTrimmed:               	155400 reads (3.09%) 	7263048 bases (1.70%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	25783 reads (0.51%) 	9431455 bases (2.21%)
+Result:                 	5001862 reads (99.49%) 	417918370 bases (97.79%)
+
+Time:                         	3.705 seconds.
+Reads Processed:       5027k 	1357.17k reads/sec
+Bases Processed:        427m 	115.36m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_H_5_CCGCAA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_H_5_CCGCAA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ASC_06_H_5_CCGCAA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ASC_06_H_5_CCGCAA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.015 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.070 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.013 seconds.
+Processing time:   		2.604 seconds.
+
+Input:                  	5126766 reads 		435775110 bases.
+Polymer-trimmed:        	46321 reads (0.90%) 	760846 bases (0.17%)
+KTrimmed:               	260331 reads (5.08%) 	11023278 bases (2.53%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	12053 reads (0.24%) 	11784124 bases (2.70%)
+Result:                 	5114713 reads (99.76%) 	423990986 bases (97.30%)
+
+Time:                         	2.688 seconds.
+Reads Processed:       5126k 	1907.07k reads/sec
+Bases Processed:        435m 	162.10m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BLANK_ACATTA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BLANK_ACATTA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BLANK_ACATTA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BLANK_ACATTA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.011 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.074 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		0.772 seconds.
+
+Input:                  	113413 reads 		9640105 bases.
+Polymer-trimmed:        	3240 reads (2.86%) 	66664 bases (0.69%)
+KTrimmed:               	4890 reads (4.31%) 	226829 bases (2.35%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	659 reads (0.58%) 	293493 bases (3.04%)
+Result:                 	112754 reads (99.42%) 	9346612 bases (96.96%)
+
+Time:                         	0.857 seconds.
+Reads Processed:        113k 	132.27k reads/sec
+Bases Processed:       9640k 	11.24m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_C_0_ACCGTG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_C_0_ACCGTG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_C_0_ACCGTG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_C_0_ACCGTG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.013 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.067 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		2.319 seconds.
+
+Input:                  	3332074 reads 		283226290 bases.
+Polymer-trimmed:        	127750 reads (3.83%) 	2199588 bases (0.78%)
+KTrimmed:               	722779 reads (21.69%) 	48080156 bases (16.98%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	380159 reads (11.41%) 	50279744 bases (17.75%)
+Result:                 	2951915 reads (88.59%) 	232946546 bases (82.25%)
+
+Time:                         	2.397 seconds.
+Reads Processed:       3332k 	1390.32k reads/sec
+Bases Processed:        283m 	118.18m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_C_10_GCATGG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_C_10_GCATGG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_C_10_GCATGG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_C_10_GCATGG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.015 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.067 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.016 seconds.
+Processing time:   		2.884 seconds.
+
+Input:                  	5692043 reads 		483823655 bases.
+Polymer-trimmed:        	48503 reads (0.85%) 	819901 bases (0.17%)
+KTrimmed:               	225249 reads (3.96%) 	9350325 bases (1.93%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	7076 reads (0.12%) 	10170226 bases (2.10%)
+Result:                 	5684967 reads (99.88%) 	473653429 bases (97.90%)
+
+Time:                         	2.968 seconds.
+Reads Processed:       5692k 	1917.76k reads/sec
+Bases Processed:        483m 	163.01m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_D_H_0_GCGAAT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_D_H_0_GCGAAT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_D_H_0_GCGAAT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_D_H_0_GCGAAT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.009 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.072 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		10.829 seconds.
+
+Input:                  	6003388 reads 		510287980 bases.
+Polymer-trimmed:        	254249 reads (4.24%) 	4272806 bases (0.84%)
+KTrimmed:               	147888 reads (2.46%) 	5145101 bases (1.01%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	7290 reads (0.12%) 	9417907 bases (1.85%)
+Result:                 	5996098 reads (99.88%) 	500870073 bases (98.15%)
+
+Time:                         	10.912 seconds.
+Reads Processed:       6003k 	550.15k reads/sec
+Bases Processed:        510m 	46.76m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_D_H_10_GATTGT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_D_H_10_GATTGT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_D_H_10_GATTGT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_D_H_10_GATTGT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.008 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.085 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		4.399 seconds.
+
+Input:                  	6049822 reads 		514234870 bases.
+Polymer-trimmed:        	86318 reads (1.43%) 	1489328 bases (0.29%)
+KTrimmed:               	263247 reads (4.35%) 	10786994 bases (2.10%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	10612 reads (0.18%) 	12276322 bases (2.39%)
+Result:                 	6039210 reads (99.82%) 	501958548 bases (97.61%)
+
+Time:                         	4.496 seconds.
+Reads Processed:       6049k 	1345.59k reads/sec
+Bases Processed:        514m 	114.38m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_D_H_5_GGTATA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_D_H_5_GGTATA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_D_H_5_GGTATA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_D_H_5_GGTATA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.008 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.073 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		3.100 seconds.
+
+Input:                  	4913628 reads 		417658380 bases.
+Polymer-trimmed:        	23956 reads (0.49%) 	422685 bases (0.10%)
+KTrimmed:               	107767 reads (2.19%) 	4397139 bases (1.05%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	3609 reads (0.07%) 	4819824 bases (1.15%)
+Result:                 	4910019 reads (99.93%) 	412838556 bases (98.85%)
+
+Time:                         	3.184 seconds.
+Reads Processed:       4913k 	1543.11k reads/sec
+Bases Processed:        417m 	131.16m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_H_0_TGGATT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_H_0_TGGATT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_H_0_TGGATT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_H_0_TGGATT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.021 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.067 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		3.611 seconds.
+
+Input:                  	5479364 reads 		465745940 bases.
+Polymer-trimmed:        	236114 reads (4.31%) 	4012187 bases (0.86%)
+KTrimmed:               	77079 reads (1.41%) 	3009000 bases (0.65%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	14802 reads (0.27%) 	7021187 bases (1.51%)
+Result:                 	5464562 reads (99.73%) 	458724753 bases (98.49%)
+
+Time:                         	3.690 seconds.
+Reads Processed:       5479k 	1485.00k reads/sec
+Bases Processed:        465m 	126.22m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_H_10_TTCCGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_H_10_TTCCGC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/BRU_05_H_10_TTCCGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/BRU_05_H_10_TTCCGC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.016 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.077 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		2.944 seconds.
+
+Input:                  	5537752 reads 		470708920 bases.
+Polymer-trimmed:        	173406 reads (3.13%) 	3176390 bases (0.67%)
+KTrimmed:               	793885 reads (14.34%) 	47785674 bases (10.15%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	320423 reads (5.79%) 	50962064 bases (10.83%)
+Result:                 	5217329 reads (94.21%) 	419746856 bases (89.17%)
+
+Time:                         	3.033 seconds.
+Reads Processed:       5537k 	1825.88k reads/sec
+Bases Processed:        470m 	155.20m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_C_0_GGCTGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_C_0_GGCTGC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_C_0_GGCTGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_C_0_GGCTGC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.013 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.060 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.013 seconds.
+Processing time:   		2.181 seconds.
+
+Input:                  	3734010 reads 		317390850 bases.
+Polymer-trimmed:        	42109 reads (1.13%) 	783302 bases (0.25%)
+KTrimmed:               	104242 reads (2.79%) 	4273128 bases (1.35%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	3628 reads (0.10%) 	5056430 bases (1.59%)
+Result:                 	3730382 reads (99.90%) 	312334420 bases (98.41%)
+
+Time:                         	2.256 seconds.
+Reads Processed:       3734k 	1655.07k reads/sec
+Bases Processed:        317m 	140.68m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_C_10_AACGCC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_C_10_AACGCC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_C_10_AACGCC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_C_10_AACGCC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.009 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.076 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		6.179 seconds.
+
+Input:                  	5051897 reads 		429411245 bases.
+Polymer-trimmed:        	43611 reads (0.86%) 	769777 bases (0.18%)
+KTrimmed:               	300711 reads (5.95%) 	13151747 bases (3.06%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	16461 reads (0.33%) 	13921524 bases (3.24%)
+Result:                 	5035436 reads (99.67%) 	415489721 bases (96.76%)
+
+Time:                         	6.266 seconds.
+Reads Processed:       5051k 	806.18k reads/sec
+Bases Processed:        429m 	68.53m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_C_5_TTAACT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_C_5_TTAACT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_C_5_TTAACT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_C_5_TTAACT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.017 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.069 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		2.171 seconds.
+
+Input:                  	4394926 reads 		373568710 bases.
+Polymer-trimmed:        	36006 reads (0.82%) 	667908 bases (0.18%)
+KTrimmed:               	129661 reads (2.95%) 	5529530 bases (1.48%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	6390 reads (0.15%) 	6197438 bases (1.66%)
+Result:                 	4388536 reads (99.85%) 	367371272 bases (98.34%)
+
+Time:                         	2.252 seconds.
+Reads Processed:       4394k 	1951.90k reads/sec
+Bases Processed:        373m 	165.91m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_D_H_0_ATAAGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_D_H_0_ATAAGA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_D_H_0_ATAAGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_D_H_0_ATAAGA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.019 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.069 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		3.137 seconds.
+
+Input:                  	5451780 reads 		463401300 bases.
+Polymer-trimmed:        	48149 reads (0.88%) 	863301 bases (0.19%)
+KTrimmed:               	251956 reads (4.62%) 	11003101 bases (2.37%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	13326 reads (0.24%) 	11866402 bases (2.56%)
+Result:                 	5438454 reads (99.76%) 	451534898 bases (97.44%)
+
+Time:                         	3.217 seconds.
+Reads Processed:       5451k 	1694.80k reads/sec
+Bases Processed:        463m 	144.06m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_D_H_10_AAGACA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_D_H_10_AAGACA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_D_H_10_AAGACA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_D_H_10_AAGACA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.028 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.064 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		4.668 seconds.
+
+Input:                  	5658552 reads 		480976920 bases.
+Polymer-trimmed:        	134419 reads (2.38%) 	2419477 bases (0.50%)
+KTrimmed:               	119865 reads (2.12%) 	5061973 bases (1.05%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	12606 reads (0.22%) 	7481450 bases (1.56%)
+Result:                 	5645946 reads (99.78%) 	473495470 bases (98.44%)
+
+Time:                         	4.745 seconds.
+Reads Processed:       5658k 	1192.57k reads/sec
+Bases Processed:        480m 	101.37m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_H_0_ATTGGT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_H_0_ATTGGT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_H_0_ATTGGT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_H_0_ATTGGT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.010 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.074 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		4.317 seconds.
+
+Input:                  	6945851 reads 		590397335 bases.
+Polymer-trimmed:        	19963 reads (0.29%) 	321011 bases (0.05%)
+KTrimmed:               	275376 reads (3.96%) 	12750194 bases (2.16%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	17936 reads (0.26%) 	13071205 bases (2.21%)
+Result:                 	6927915 reads (99.74%) 	577326130 bases (97.79%)
+
+Time:                         	4.401 seconds.
+Reads Processed:       6945k 	1578.08k reads/sec
+Bases Processed:        590m 	134.14m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_H_10_CAAGCA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_H_10_CAAGCA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_H_10_CAAGCA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_H_10_CAAGCA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.016 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.068 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		2.765 seconds.
+
+Input:                  	5321345 reads 		452314325 bases.
+Polymer-trimmed:        	96258 reads (1.81%) 	1642720 bases (0.36%)
+KTrimmed:               	110922 reads (2.08%) 	4466171 bases (0.99%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	6080 reads (0.11%) 	6108891 bases (1.35%)
+Result:                 	5315265 reads (99.89%) 	446205434 bases (98.65%)
+
+Time:                         	2.843 seconds.
+Reads Processed:       5321k 	1871.53k reads/sec
+Bases Processed:        452m 	159.08m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_H_5_GGTGAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_H_5_GGTGAG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/CAM_02_H_5_GGTGAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/CAM_02_H_5_GGTGAG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.014 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.065 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		4.502 seconds.
+
+Input:                  	6446754 reads 		547974090 bases.
+Polymer-trimmed:        	103146 reads (1.60%) 	1861383 bases (0.34%)
+KTrimmed:               	288344 reads (4.47%) 	11554216 bases (2.11%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	8537 reads (0.13%) 	13415599 bases (2.45%)
+Result:                 	6438217 reads (99.87%) 	534558491 bases (97.55%)
+
+Time:                         	4.577 seconds.
+Reads Processed:       6446k 	1408.47k reads/sec
+Bases Processed:        547m 	119.72m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_C_0_CAGATG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_C_0_CAGATG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_C_0_CAGATG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_C_0_CAGATG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.009 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.070 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		6.733 seconds.
+
+Input:                  	5108993 reads 		434264405 bases.
+Polymer-trimmed:        	63336 reads (1.24%) 	1036321 bases (0.24%)
+KTrimmed:               	358775 reads (7.02%) 	15590326 bases (3.59%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	17777 reads (0.35%) 	16626647 bases (3.83%)
+Result:                 	5091216 reads (99.65%) 	417637758 bases (96.17%)
+
+Time:                         	6.814 seconds.
+Reads Processed:       5108k 	749.80k reads/sec
+Bases Processed:        434m 	63.73m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_C_10_ACAACG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_C_10_ACAACG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_C_10_ACAACG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_C_10_ACAACG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.012 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.069 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.012 seconds.
+Processing time:   		3.676 seconds.
+
+Input:                  	5548890 reads 		471655650 bases.
+Polymer-trimmed:        	93370 reads (1.68%) 	1703773 bases (0.36%)
+KTrimmed:               	164398 reads (2.96%) 	6861816 bases (1.45%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	7860 reads (0.14%) 	8565589 bases (1.82%)
+Result:                 	5541030 reads (99.86%) 	463090061 bases (98.18%)
+
+Time:                         	3.759 seconds.
+Reads Processed:       5548k 	1476.11k reads/sec
+Bases Processed:        471m 	125.47m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_D_H_0_CGGTTA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_D_H_0_CGGTTA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_D_H_0_CGGTTA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_D_H_0_CGGTTA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.010 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.069 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		2.780 seconds.
+
+Input:                  	5233242 reads 		444825570 bases.
+Polymer-trimmed:        	113025 reads (2.16%) 	2090763 bases (0.47%)
+KTrimmed:               	199516 reads (3.81%) 	8490452 bases (1.91%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	12160 reads (0.23%) 	10581215 bases (2.38%)
+Result:                 	5221082 reads (99.77%) 	434244355 bases (97.62%)
+
+Time:                         	2.861 seconds.
+Reads Processed:       5233k 	1829.46k reads/sec
+Bases Processed:        444m 	155.50m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_D_H_10_TACCTT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_D_H_10_TACCTT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_D_H_10_TACCTT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_D_H_10_TACCTT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.013 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.070 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		2.579 seconds.
+
+Input:                  	4062314 reads 		345296690 bases.
+Polymer-trimmed:        	43996 reads (1.08%) 	719304 bases (0.21%)
+KTrimmed:               	321553 reads (7.92%) 	12976019 bases (3.76%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	3460 reads (0.09%) 	13695323 bases (3.97%)
+Result:                 	4058854 reads (99.91%) 	331601367 bases (96.03%)
+
+Time:                         	2.662 seconds.
+Reads Processed:       4062k 	1526.10k reads/sec
+Bases Processed:        345m 	129.72m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_D_H_5_GACGAT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_D_H_5_GACGAT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_D_H_5_GACGAT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_D_H_5_GACGAT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.016 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.076 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		4.444 seconds.
+
+Input:                  	5674445 reads 		482327825 bases.
+Polymer-trimmed:        	71117 reads (1.25%) 	1248963 bases (0.26%)
+KTrimmed:               	225021 reads (3.97%) 	9452031 bases (1.96%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	11648 reads (0.21%) 	10700994 bases (2.22%)
+Result:                 	5662797 reads (99.79%) 	471626831 bases (97.78%)
+
+Time:                         	4.533 seconds.
+Reads Processed:       5674k 	1251.94k reads/sec
+Bases Processed:        482m 	106.42m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_H_0_TCAGGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_H_0_TCAGGA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_H_0_TCAGGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_H_0_TCAGGA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.010 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.072 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		4.231 seconds.
+
+Input:                  	4620320 reads 		392727200 bases.
+Polymer-trimmed:        	98986 reads (2.14%) 	1779958 bases (0.45%)
+KTrimmed:               	302029 reads (6.54%) 	12745343 bases (3.25%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	15489 reads (0.34%) 	14525301 bases (3.70%)
+Result:                 	4604831 reads (99.66%) 	378201899 bases (96.30%)
+
+Time:                         	4.314 seconds.
+Reads Processed:       4620k 	1071.05k reads/sec
+Bases Processed:        392m 	91.04m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_H_10_ATGGCG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_H_10_ATGGCG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/ESC_01_H_10_ATGGCG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/ESC_01_H_10_ATGGCG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.022 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.060 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		3.256 seconds.
+
+Input:                  	5541050 reads 		470989250 bases.
+Polymer-trimmed:        	123963 reads (2.24%) 	2162289 bases (0.46%)
+KTrimmed:               	141091 reads (2.55%) 	5664051 bases (1.20%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	8411 reads (0.15%) 	7826340 bases (1.66%)
+Result:                 	5532639 reads (99.85%) 	463162910 bases (98.34%)
+
+Time:                         	3.328 seconds.
+Reads Processed:       5541k 	1664.76k reads/sec
+Bases Processed:        470m 	141.50m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_C_0_ACCTAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_C_0_ACCTAC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_C_0_ACCTAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_C_0_ACCTAC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.029 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.075 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		2.609 seconds.
+
+Input:                  	4790783 reads 		407216555 bases.
+Polymer-trimmed:        	78866 reads (1.65%) 	1524848 bases (0.37%)
+KTrimmed:               	133666 reads (2.79%) 	5496410 bases (1.35%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	5312 reads (0.11%) 	7021258 bases (1.72%)
+Result:                 	4785471 reads (99.89%) 	400195297 bases (98.28%)
+
+Time:                         	2.696 seconds.
+Reads Processed:       4790k 	1776.71k reads/sec
+Bases Processed:        407m 	151.02m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_C_10_TATGTC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_C_10_TATGTC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_C_10_TATGTC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_C_10_TATGTC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.025 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.062 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		2.285 seconds.
+
+Input:                  	3171798 reads 		269602830 bases.
+Polymer-trimmed:        	18152 reads (0.57%) 	341648 bases (0.13%)
+KTrimmed:               	83713 reads (2.64%) 	3466636 bases (1.29%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	2871 reads (0.09%) 	3808284 bases (1.41%)
+Result:                 	3168927 reads (99.91%) 	265794546 bases (98.59%)
+
+Time:                         	2.358 seconds.
+Reads Processed:       3171k 	1345.12k reads/sec
+Bases Processed:        269m 	114.34m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_D_H_0_CCAATT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_D_H_0_CCAATT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_D_H_0_CCAATT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_D_H_0_CCAATT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.016 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.067 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		2.442 seconds.
+
+Input:                  	5260967 reads 		447182195 bases.
+Polymer-trimmed:        	31300 reads (0.59%) 	525083 bases (0.12%)
+KTrimmed:               	276101 reads (5.25%) 	11691460 bases (2.61%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	7520 reads (0.14%) 	12216543 bases (2.73%)
+Result:                 	5253447 reads (99.86%) 	434965652 bases (97.27%)
+
+Time:                         	2.520 seconds.
+Reads Processed:       5260k 	2087.59k reads/sec
+Bases Processed:        447m 	177.44m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_D_H_10_CGCCTG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_D_H_10_CGCCTG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_D_H_10_CGCCTG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_D_H_10_CGCCTG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.013 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.055 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		4.087 seconds.
+
+Input:                  	4461636 reads 		379239060 bases.
+Polymer-trimmed:        	26390 reads (0.59%) 	451260 bases (0.12%)
+KTrimmed:               	368238 reads (8.25%) 	14687498 bases (3.87%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	6414 reads (0.14%) 	15138758 bases (3.99%)
+Result:                 	4455222 reads (99.86%) 	364100302 bases (96.01%)
+
+Time:                         	4.154 seconds.
+Reads Processed:       4461k 	1073.99k reads/sec
+Bases Processed:        379m 	91.29m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_H_0_AACCGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_H_0_AACCGA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_H_0_AACCGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_H_0_AACCGA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.008 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.072 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.012 seconds.
+Processing time:   		2.544 seconds.
+
+Input:                  	4921979 reads 		418368215 bases.
+Polymer-trimmed:        	39934 reads (0.81%) 	676057 bases (0.16%)
+KTrimmed:               	234572 reads (4.77%) 	9902462 bases (2.37%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	9000 reads (0.18%) 	10578519 bases (2.53%)
+Result:                 	4912979 reads (99.82%) 	407789696 bases (97.47%)
+
+Time:                         	2.630 seconds.
+Reads Processed:       4921k 	1871.15k reads/sec
+Bases Processed:        418m 	159.05m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_H_10_CGATCT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_H_10_CGATCT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_H_10_CGATCT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_H_10_CGATCT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.014 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.080 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		2.674 seconds.
+
+Input:                  	6013859 reads 		511178015 bases.
+Polymer-trimmed:        	89880 reads (1.49%) 	1578403 bases (0.31%)
+KTrimmed:               	450316 reads (7.49%) 	21506185 bases (4.21%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	44817 reads (0.75%) 	23084588 bases (4.52%)
+Result:                 	5969042 reads (99.25%) 	488093427 bases (95.48%)
+
+Time:                         	2.766 seconds.
+Reads Processed:       6013k 	2174.37k reads/sec
+Bases Processed:        511m 	184.82m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_H_5_ATGAAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_H_5_ATGAAC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/JAY_02_H_5_ATGAAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/JAY_02_H_5_ATGAAC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.009 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.073 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		2.592 seconds.
+
+Input:                  	3700922 reads 		314578370 bases.
+Polymer-trimmed:        	16962 reads (0.46%) 	310088 bases (0.10%)
+KTrimmed:               	126724 reads (3.42%) 	5123225 bases (1.63%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	3635 reads (0.10%) 	5433313 bases (1.73%)
+Result:                 	3697287 reads (99.90%) 	309145057 bases (98.27%)
+
+Time:                         	2.677 seconds.
+Reads Processed:       3700k 	1382.41k reads/sec
+Bases Processed:        314m 	117.50m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_C_0_CACACT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_C_0_CACACT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_C_0_CACACT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_C_0_CACACT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.019 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.091 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		3.980 seconds.
+
+Input:                  	5293977 reads 		449988045 bases.
+Polymer-trimmed:        	44365 reads (0.84%) 	797849 bases (0.18%)
+KTrimmed:               	224242 reads (4.24%) 	9366779 bases (2.08%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	10701 reads (0.20%) 	10164628 bases (2.26%)
+Result:                 	5283276 reads (99.80%) 	439823417 bases (97.74%)
+
+Time:                         	4.082 seconds.
+Reads Processed:       5293k 	1296.77k reads/sec
+Bases Processed:        449m 	110.23m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_C_10_CGTCGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_C_10_CGTCGC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_C_10_CGTCGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_C_10_CGTCGC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.018 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.065 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.012 seconds.
+Processing time:   		2.567 seconds.
+
+Input:                  	5005431 reads 		425461635 bases.
+Polymer-trimmed:        	78769 reads (1.57%) 	1359334 bases (0.32%)
+KTrimmed:               	143662 reads (2.87%) 	6635303 bases (1.56%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	15530 reads (0.31%) 	7994637 bases (1.88%)
+Result:                 	4989901 reads (99.69%) 	417466998 bases (98.12%)
+
+Time:                         	2.645 seconds.
+Reads Processed:       5005k 	1892.33k reads/sec
+Bases Processed:        425m 	160.85m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_D_H_0_CAATGC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_D_H_0_CAATGC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_D_H_0_CAATGC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_D_H_0_CAATGC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.008 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.072 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		2.784 seconds.
+
+Input:                  	4598443 reads 		390867655 bases.
+Polymer-trimmed:        	31482 reads (0.68%) 	584055 bases (0.15%)
+KTrimmed:               	164679 reads (3.58%) 	6687174 bases (1.71%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	2925 reads (0.06%) 	7271229 bases (1.86%)
+Result:                 	4595518 reads (99.94%) 	383596426 bases (98.14%)
+
+Time:                         	2.867 seconds.
+Reads Processed:       4598k 	1603.91k reads/sec
+Bases Processed:        390m 	136.33m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_D_H_10_TGACAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_D_H_10_TGACAC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_D_H_10_TGACAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_D_H_10_TGACAC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.020 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.068 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		4.575 seconds.
+
+Input:                  	5357229 reads 		455364465 bases.
+Polymer-trimmed:        	55934 reads (1.04%) 	969589 bases (0.21%)
+KTrimmed:               	212429 reads (3.97%) 	9054458 bases (1.99%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	11978 reads (0.22%) 	10024047 bases (2.20%)
+Result:                 	5345251 reads (99.78%) 	445340418 bases (97.80%)
+
+Time:                         	4.654 seconds.
+Reads Processed:       5357k 	1151.07k reads/sec
+Bases Processed:        455m 	97.84m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_H_0_CTCCAT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_H_0_CTCCAT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_H_0_CTCCAT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_H_0_CTCCAT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.009 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.061 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.027 seconds.
+Processing time:   		3.763 seconds.
+
+Input:                  	5646849 reads 		479982165 bases.
+Polymer-trimmed:        	81835 reads (1.45%) 	1618690 bases (0.34%)
+KTrimmed:               	227938 reads (4.04%) 	9204998 bases (1.92%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	5986 reads (0.11%) 	10823688 bases (2.26%)
+Result:                 	5640863 reads (99.89%) 	469158477 bases (97.74%)
+
+Time:                         	3.853 seconds.
+Reads Processed:       5646k 	1465.67k reads/sec
+Bases Processed:        479m 	124.58m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_H_10_TAGGCT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_H_10_TAGGCT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/KAN_04_H_10_TAGGCT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/KAN_04_H_10_TAGGCT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.009 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.065 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		5.871 seconds.
+
+Input:                  	9780583 reads 		831349555 bases.
+Polymer-trimmed:        	48451 reads (0.50%) 	819112 bases (0.10%)
+KTrimmed:               	595150 reads (6.09%) 	23713427 bases (2.85%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	9397 reads (0.10%) 	24532539 bases (2.95%)
+Result:                 	9771186 reads (99.90%) 	806817016 bases (97.05%)
+
+Time:                         	5.949 seconds.
+Reads Processed:       9780k 	1644.09k reads/sec
+Bases Processed:        831m 	139.75m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_C_0_AGTACT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_C_0_AGTACT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_C_0_AGTACT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_C_0_AGTACT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.009 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.060 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		3.935 seconds.
+
+Input:                  	7356748 reads 		625323580 bases.
+Polymer-trimmed:        	288677 reads (3.92%) 	4796448 bases (0.77%)
+KTrimmed:               	1043336 reads (14.18%) 	42536015 bases (6.80%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	49829 reads (0.68%) 	47332463 bases (7.57%)
+Result:                 	7306919 reads (99.32%) 	577991117 bases (92.43%)
+
+Time:                         	4.007 seconds.
+Reads Processed:       7356k 	1835.95k reads/sec
+Bases Processed:        625m 	156.06m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_C_10_CCTAAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_C_10_CCTAAG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_C_10_CCTAAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_C_10_CCTAAG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.017 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.224 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		3.877 seconds.
+
+Input:                  	4903048 reads 		416759080 bases.
+Polymer-trimmed:        	13498 reads (0.28%) 	243256 bases (0.06%)
+KTrimmed:               	116560 reads (2.38%) 	4464952 bases (1.07%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	1958 reads (0.04%) 	4708208 bases (1.13%)
+Result:                 	4901090 reads (99.96%) 	412050872 bases (98.87%)
+
+Time:                         	4.112 seconds.
+Reads Processed:       4903k 	1192.32k reads/sec
+Bases Processed:        416m 	101.35m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_C_5_CAACAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_C_5_CAACAG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_C_5_CAACAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_C_5_CAACAG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.013 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.067 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		2.720 seconds.
+
+Input:                  	5041444 reads 		428522740 bases.
+Polymer-trimmed:        	60374 reads (1.20%) 	1102978 bases (0.26%)
+KTrimmed:               	167833 reads (3.33%) 	7101265 bases (1.66%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	6994 reads (0.14%) 	8204243 bases (1.91%)
+Result:                 	5034450 reads (99.86%) 	420318497 bases (98.09%)
+
+Time:                         	2.799 seconds.
+Reads Processed:       5041k 	1801.37k reads/sec
+Bases Processed:        428m 	153.12m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_D_H_0_AGATAG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_D_H_0_AGATAG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_D_H_0_AGATAG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_D_H_0_AGATAG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.011 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.068 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		3.293 seconds.
+
+Input:                  	5646781 reads 		479976385 bases.
+Polymer-trimmed:        	88721 reads (1.57%) 	1460477 bases (0.30%)
+KTrimmed:               	637778 reads (11.29%) 	29360048 bases (6.12%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	74626 reads (1.32%) 	30820525 bases (6.42%)
+Result:                 	5572155 reads (98.68%) 	449155860 bases (93.58%)
+
+Time:                         	3.372 seconds.
+Reads Processed:       5646k 	1674.42k reads/sec
+Bases Processed:        479m 	142.33m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_D_H_10_CAGGAC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_D_H_10_CAGGAC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_D_H_10_CAGGAC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_D_H_10_CAGGAC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.018 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.066 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		4.033 seconds.
+
+Input:                  	5093811 reads 		432973935 bases.
+Polymer-trimmed:        	37620 reads (0.74%) 	660927 bases (0.15%)
+KTrimmed:               	142504 reads (2.80%) 	5724912 bases (1.32%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	3697 reads (0.07%) 	6385839 bases (1.47%)
+Result:                 	5090114 reads (99.93%) 	426588096 bases (98.53%)
+
+Time:                         	4.110 seconds.
+Reads Processed:       5093k 	1239.43k reads/sec
+Bases Processed:        432m 	105.35m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_H_0_TGGCGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_H_0_TGGCGA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_H_0_TGGCGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_H_0_TGGCGA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.009 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.067 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		2.907 seconds.
+
+Input:                  	5726998 reads 		486794830 bases.
+Polymer-trimmed:        	68908 reads (1.20%) 	1129201 bases (0.23%)
+KTrimmed:               	247281 reads (4.32%) 	10086343 bases (2.07%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	9723 reads (0.17%) 	11215544 bases (2.30%)
+Result:                 	5717275 reads (99.83%) 	475579286 bases (97.70%)
+
+Time:                         	2.985 seconds.
+Reads Processed:       5726k 	1918.69k reads/sec
+Bases Processed:        486m 	163.09m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_H_10_GACATC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_H_10_GACATC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/LOL_02_H_10_GACATC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/LOL_02_H_10_GACATC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.009 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.078 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		3.298 seconds.
+
+Input:                  	6059100 reads 		515023500 bases.
+Polymer-trimmed:        	258571 reads (4.27%) 	4245724 bases (0.82%)
+KTrimmed:               	58847 reads (0.97%) 	2495744 bases (0.48%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	17828 reads (0.29%) 	6741468 bases (1.31%)
+Result:                 	6041272 reads (99.71%) 	508282032 bases (98.69%)
+
+Time:                         	3.388 seconds.
+Reads Processed:       6059k 	1788.59k reads/sec
+Bases Processed:        515m 	152.03m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_C_0_ACAGAT_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_C_0_ACAGAT_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_C_0_ACAGAT_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_C_0_ACAGAT_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.013 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.063 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.009 seconds.
+Processing time:   		3.784 seconds.
+
+Input:                  	5666377 reads 		481642045 bases.
+Polymer-trimmed:        	67638 reads (1.19%) 	1213969 bases (0.25%)
+KTrimmed:               	383642 reads (6.77%) 	15878963 bases (3.30%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	9788 reads (0.17%) 	17092932 bases (3.55%)
+Result:                 	5656589 reads (99.83%) 	464549113 bases (96.45%)
+
+Time:                         	3.857 seconds.
+Reads Processed:       5666k 	1469.12k reads/sec
+Bases Processed:        481m 	124.88m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_C_10_TGTGCA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_C_10_TGTGCA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_C_10_TGTGCA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_C_10_TGTGCA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.016 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.068 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		2.600 seconds.
+
+Input:                  	4862568 reads 		413318280 bases.
+Polymer-trimmed:        	90495 reads (1.86%) 	1516942 bases (0.37%)
+KTrimmed:               	360186 reads (7.41%) 	14095847 bases (3.41%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	12789 reads (0.26%) 	15612789 bases (3.78%)
+Result:                 	4849779 reads (99.74%) 	397705491 bases (96.22%)
+
+Time:                         	2.679 seconds.
+Reads Processed:       4862k 	1815.39k reads/sec
+Bases Processed:        413m 	154.31m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_C_5_AGTTGA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_C_5_AGTTGA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_C_5_AGTTGA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_C_5_AGTTGA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.013 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.070 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		3.262 seconds.
+
+Input:                  	4906619 reads 		417062615 bases.
+Polymer-trimmed:        	44322 reads (0.90%) 	743360 bases (0.18%)
+KTrimmed:               	406924 reads (8.29%) 	17233453 bases (4.13%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	13306 reads (0.27%) 	17976813 bases (4.31%)
+Result:                 	4893313 reads (99.73%) 	399085802 bases (95.69%)
+
+Time:                         	3.344 seconds.
+Reads Processed:       4906k 	1467.43k reads/sec
+Bases Processed:        417m 	124.73m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_D_H_0_CTCTCG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_D_H_0_CTCTCG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_D_H_0_CTCTCG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_D_H_0_CTCTCG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.014 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.084 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		4.235 seconds.
+
+Input:                  	7368109 reads 		626289265 bases.
+Polymer-trimmed:        	202583 reads (2.75%) 	3556595 bases (0.57%)
+KTrimmed:               	652293 reads (8.85%) 	27599351 bases (4.41%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	37231 reads (0.51%) 	31155946 bases (4.97%)
+Result:                 	7330878 reads (99.49%) 	595133319 bases (95.03%)
+
+Time:                         	4.330 seconds.
+Reads Processed:       7368k 	1701.67k reads/sec
+Bases Processed:        626m 	144.64m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_D_H_10_TTTATG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_D_H_10_TTTATG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_D_H_10_TTTATG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_D_H_10_TTTATG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.012 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.054 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.010 seconds.
+Processing time:   		3.352 seconds.
+
+Input:                  	4872400 reads 		414154000 bases.
+Polymer-trimmed:        	100706 reads (2.07%) 	1735742 bases (0.42%)
+KTrimmed:               	282689 reads (5.80%) 	11485559 bases (2.77%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	12361 reads (0.25%) 	13221301 bases (3.19%)
+Result:                 	4860039 reads (99.75%) 	400932699 bases (96.81%)
+
+Time:                         	3.418 seconds.
+Reads Processed:       4872k 	1425.53k reads/sec
+Bases Processed:        414m 	121.17m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_D_H_5_AAGCTC_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_D_H_5_AAGCTC_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_D_H_5_AAGCTC_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_D_H_5_AAGCTC_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.008 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.057 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		5.548 seconds.
+
+Input:                  	2713721 reads 		230666285 bases.
+Polymer-trimmed:        	71884 reads (2.65%) 	1236990 bases (0.54%)
+KTrimmed:               	695788 reads (25.64%) 	55118542 bases (23.90%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	593772 reads (21.88%) 	56355532 bases (24.43%)
+Result:                 	2119949 reads (78.12%) 	174310753 bases (75.57%)
+
+Time:                         	5.618 seconds.
+Reads Processed:       2713k 	483.04k reads/sec
+Bases Processed:        230m 	41.06m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_H_0_AATCCG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_H_0_AATCCG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_H_0_AATCCG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_H_0_AATCCG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.016 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.071 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.012 seconds.
+Processing time:   		3.347 seconds.
+
+Input:                  	5968614 reads 		507332190 bases.
+Polymer-trimmed:        	26867 reads (0.45%) 	444416 bases (0.09%)
+KTrimmed:               	755648 reads (12.66%) 	32086863 bases (6.32%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	11854 reads (0.20%) 	32531279 bases (6.41%)
+Result:                 	5956760 reads (99.80%) 	474800911 bases (93.59%)
+
+Time:                         	3.432 seconds.
+Reads Processed:       5968k 	1739.06k reads/sec
+Bases Processed:        507m 	147.82m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_H_10_ATACTG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_H_10_ATACTG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_H_10_ATACTG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_H_10_ATACTG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.029 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.067 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		4.210 seconds.
+
+Input:                  	4417554 reads 		375492090 bases.
+Polymer-trimmed:        	37930 reads (0.86%) 	638710 bases (0.17%)
+KTrimmed:               	215754 reads (4.88%) 	9129096 bases (2.43%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	10587 reads (0.24%) 	9767806 bases (2.60%)
+Result:                 	4406967 reads (99.76%) 	365724284 bases (97.40%)
+
+Time:                         	4.289 seconds.
+Reads Processed:       4417k 	1029.99k reads/sec
+Bases Processed:        375m 	87.55m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_H_5_CGAAGG_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_H_5_CGAAGG_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/MMF_13_H_5_CGAAGG_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/MMF_13_H_5_CGAAGG_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.011 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.064 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.011 seconds.
+Processing time:   		3.846 seconds.
+
+Input:                  	5302351 reads 		450699835 bases.
+Polymer-trimmed:        	45497 reads (0.86%) 	801177 bases (0.18%)
+KTrimmed:               	273877 reads (5.17%) 	11269937 bases (2.50%)
+Trimmed by overlap:     	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	9940 reads (0.19%) 	12071114 bases (2.68%)
+Result:                 	5292411 reads (99.81%) 	438628721 bases (97.32%)
+
+Time:                         	3.924 seconds.
+Reads Processed:       5302k 	1351.19k reads/sec
+Bases Processed:        450m 	114.85m bases/sec
+java -ea -Xmx27320m -Xms27320m --add-modules jdk.incubator.vector -cp /gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/current/ jgi.BBDuk in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/NOR_02_C_0_AATGAA_R1.fastq.gz out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/NOR_02_C_0_AATGAA_R1.fastq.gz_run2.clean.fq ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo trimpolya=10
+WARNING: Using incubator modules: jdk.incubator.vector
+Executing jgi.BBDuk [in=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/fastq_run2/NOR_02_C_0_AATGAA_R1.fastq.gz, out=/gpfs1/cl/ecogen/pbio6800/GroupProjects/picea_rnaseq/cleanreads_run2/NOR_02_C_0_AATGAA_R1.fastq.gz_run2.clean.fq, ref=/gpfs1/cl/ecogen/pbio6800/GroupProjects/programs/bbmap/resources/adapters.fa, ktrim=r, k=23, mink=11, hdist=1, tpe, tbo, trimpolya=10]
+Version 39.46
+
+maskMiddle was disabled because useShortKmers=true
+Allocating kmer table: 	0.015 seconds.
+Initial:
+Memory: max=28655m, total=28655m, free=28595m, used=60m
+
+Added 217135 kmers; time: 	0.061 seconds.
+Memory: max=28655m, total=28655m, free=28511m, used=144m
+
+Input is being processed as unpaired
+Started output streams:	0.015 seconds.
