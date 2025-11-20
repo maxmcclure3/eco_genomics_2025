@@ -1,0 +1,27 @@
+#!/bin/sh
+#SBATCH --partition=general
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=16G
+#SBATCH --time=1:00:00 
+#SBATCH --job-name=Salmon_index
+#SBATCH --output=/users/g/j/gjia/projects/eco_genomics_2025/final_project/mylogs/%x_%j.out
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=rei.jia@uvm.edu
+
+# Echo some Slurm info
+echo "Starting Salmon index at: `date`"
+echo "Running on node: `hostname`"
+
+module purge
+
+module load gcc salmon
+
+# Change to the reference directory
+cd /gpfs1/cl/ecogen/pbio6800/PopulationGenomics/ref_genome/Pmariana/annotation
+
+# Run Salmon index
+salmon index -t pmariana-v1_transcripts.fa -i salmon_index
+
+#for some reason salmon index is not working, will need to ask melissa about this.
