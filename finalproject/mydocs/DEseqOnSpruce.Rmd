@@ -190,7 +190,7 @@ ggplot(pcaData, aes(PC1, PC2)) +
 metadataSpruceRNA$day_harvest <- as.character(metadataSpruceRNA$day_harvest)
 dds_sourceVday$source_climate <- relevel(dds_sourceVday$source_climate, ref = "HotDry")
 dds_sourceVtreatment$treatment <- relevel(dds_sourceVtreatment$treatment, ref = "Control")
-dds_sourceVday$day_harvest <- relevel(dds_sourceVday$day_harvest, ref = "0")
+#dds_sourceVday$day_harvest <- relevel(dds_sourceVday$day_harvest, ref = "0")
 
 
 dds_sourceVday$group <- factor(paste0(dds_sourceVday$source_climate, dds_sourceVday$day_harvest))
@@ -272,7 +272,7 @@ res_df$significance <- "Not Sig"
 res_df$significance[res_df$padj < 0.05 & res_df$log2FoldChange > 0] <- "Up"
 res_df$significance[res_df$padj < 0.05 & res_df$log2FoldChange < 0] <- "Down"
 ggplot(res_df, aes(x = log2FoldChange, y = -log10(padj), color = significance)) +
-  geom_point(alpha = 0.7, size = 2) +
+  geom_point(alpha = 0.7, size = 1) +
   scale_color_manual(values = c("Up" = "red", "Down" = "blue", "Not Sig" = "grey")) +
   geom_vline(xintercept = c(-1, 1), linetype = "dashed", color = "black") +
   geom_hline(yintercept = -log10(0.05), linetype = "dashed", color = "black") +
@@ -282,18 +282,27 @@ ggplot(res_df, aes(x = log2FoldChange, y = -log10(padj), color = significance)) 
     y = expression(-log[10]~Adjusted~p~value)
   ) +
   theme_bw(base_size = 14) +
-  theme(legend.title = element_blank())
+  theme(legend.title = element_blank(),
+        legend.position = "none",
+        plot.title = element_text(hjust = 0.5),
+        axis.title.y = element_text(size = 12),
+        axis.title.x = element_text(size = 12))
 }
 
 vol(coolwetVhotdry_t0, "CWvHT t0")
 vol(coolwetVhotdry_t5, "CWvHT t5")
 vol(coolwetVhotdry_t10, "CWvHT t10")
-vol(hotdry_0v5, "0v5 HD")
-vol(hotdry_0v10, "0v10 HD")
-vol(hotdry_5v10, "5v10 HD")
-vol(coolwet_0v5, "0v5 CW")
-vol(coolwet_0v10, "0v10 CW")
-vol(coolwet_5v10, "5v10 CW")
+
+
+HD_0v5 <- vol(hotdry_0v5, "t0 vs t5") +
+  scale_y_continuous(breaks = c(0,3,6,9))
+HD_0v10 <- vol(hotdry_0v10, "t0 vs t10") + theme(axis.title.y = element_blank())
+HD_5v10 <- vol(hotdry_5v10, "t5 vs t10") + theme(axis.title.y = element_blank())
+CW_0v5 <- vol(coolwet_0v5, "t0 vs t5")
+CW_0v10 <- vol(coolwet_0v10, "t0 vs t10")+ theme(axis.title.y = element_blank())
+CW_5v10 <- vol(coolwet_5v10, "t5 vs t10")+ theme(axis.title.y = element_blank())
+
+
 vol(hotdry_CvH, "CvH HD")
 vol(hotdry_CvDH, "Control versus Drought & Heat treatments (source = hot/dry)")
 vol(hotdry_HvDH, "HvDH HD")
@@ -301,6 +310,12 @@ vol(coolwet_CvH, "CvH CW")
 vol(coolwet_CvDH, "Control versus Drought & Heat treatments (source = cool/wet)")
 vol(coolwet_HvDH, "HvDH CW")
 
+volcaner <- ggarrange(HD_0v5, HD_0v10, HD_5v10,
+          CW_0v5, CW_0v10, CW_5v10,
+          widths = c(1.1,1,1),
+          common.legend = T, 
+          legend = "bottom")
+ggsave("volcano.tif", plot = volcaner)
 ```
 
 ## individual genes
@@ -422,7 +437,7 @@ pheatmap(lfc_mat_treatmentcoolwet,
          clustering_distance_cols = "euclidean",
          clustering_method = "complete",
          show_rownames = FALSE,
-         main = "LFC (hot/dry across treatment)")
+         main = "LFC (cool/wet across treatment)")
 ```
 
 
@@ -446,6 +461,35 @@ degs_hotdry_0v5 <- row.names(hotdry_0v5[hotdry_0v5$padj < 0.05,])
 commondegs <- degs_coolwet_0v10[degs_coolwet_0v10 %in% degs_hotdry_0v10]
 filtered_degs_hotdry10 <- hotdry_0v10[rownames(hotdry_0v10) %in% commondegs,]
 filtered_degs_coolwet10 <- coolwet_0v10[rownames(coolwet_0v10) %in% commondegs,]
+
+
+## treatment between source climates
+coolwet_CvDH$padj[is.na(coolwet_CvDH$padj)] <- 0.5
+degs_coolwet_CvDH <- row.names(coolwet_CvDH[coolwet_CvDH$padj < 0.05,])
+
+hotdry_CvDH$padj[is.na(hotdry_CvDH$padj)] <- 0.5
+degs_hotdry_CvDH <- row.names(hotdry_CvDH[hotdry_CvDH$padj < 0.05,])
+
+commonTreatmentDegs <- degs_hotdry_CvDH[degs_hotdry_CvDH %in% degs_coolwet_CvDH]
+filtered_degs_coolwetDH <- coolwet_CvDH[
+  rownames(coolwet_CvDH) %in% commonTreatmentDegs,]
+filtered_degs_hotdryDH <- hotdry_CvDH[
+  rownames(hotdry_CvDH) %in% commonTreatmentDegs,]
+
+dfhotdryTreatment <- data.frame(
+  row.names = c(rownames(filtered_degs_hotdryDH)), 
+  LFC = filtered_degs_hotdryDH$log2FoldChange
+)
+dfcoolwetTreatment <- data.frame(
+  row.names = c(rownames(filtered_degs_coolwetDH)),
+  LFC = filtered_degs_coolwetDH$log2FoldChange
+)
+
+TreatmentPlotDF <- merge(dfcoolwetTreatment, dfhotdryTreatment, 
+                         by = "row.names", all = T)
+TreatmentPlotDF <- TreatmentPlotDF %>%
+  rename(hotdry = LFC.y,
+         coolwet = LFC.x)
 ```
 
 - steve and I spoke about a plot that could be good
@@ -471,11 +515,16 @@ plotdf <- plotdf %>%
   rename(hotdry = LFC.x) 
 plotdf <- plotdf %>%
   rename(coolwet = LFC.y)
+```
 
-ggplot() +
+### LFC temporal source climate
+```{r}
+temporalPlot <- ggplot() +
   geom_point(data = plotdf, aes(x = hotdry, y = coolwet),
-             size = 3, color = "black") +
-  geom_smooth() +
+             size = 3, color = "green4") +
+  geom_smooth(data = plotdf, aes(x = hotdry, y = coolwet),
+              method = "lm", formula = y~x +0, fullrange = T, level = 0.3,
+              color = "green4") +
   geom_abline(intercept = 0, slope = 1, alpha = 0.3) +
   geom_abline(intercept = 0, slope = 0, alpha = 0.5) +
   geom_vline(xintercept = 0, alpha = 0.5) +
@@ -489,7 +538,87 @@ ggplot() +
                    fill = "lightblue",
                position = position_nudge(x = -3.28),
                bw = 0.1) +
+  
+  geom_density(data = hotdry_0v10[hotdry_0v10$padj < 0.1,], 
+               aes(y = log2FoldChange, x = after_stat(ndensity)),
+                   fill = "tan",
+               position = position_nudge(x = -3.28),
+               bw = 0.1, alpha = 0.1, linewidth = 0.1) +
+  geom_density(data = coolwet_0v10[coolwet_0v10$padj < 0.1,], 
+               aes(x = log2FoldChange, y = after_stat(ndensity)),
+                   fill = "lightblue",
+               position = position_nudge(y = -3.76),
+               bw = 0.1, alpha = 0.1, linewidth = 0.1) +
   coord_cartesian(xlim = c(-3,3), ylim = c(-3.5,2)) +
-  theme(panel.border = element_rect(color = "black"))
+  theme(panel.border = element_rect(color = "black")) +
+  labs(x = "LFC day 0 vs day 10 (Hot/Dry Source)",
+       y = "LFC day 0 vs day 10 (Cool/wet Source)",
+       title = "LFC of Common Temporal DEGs against Source Climate")
+```
+### LFC treatment and source climate
+```{r}
+ggplot() +
+  geom_point(data = TreatmentPlotDF, aes(x = hotdry, y = coolwet),
+             size = 3, color = "green4") +
+  geom_smooth(data = TreatmentPlotDF, aes(x = hotdry, y = coolwet),
+              method = "lm", formula = y~x +0, fullrange = T, level = 0.5,
+              xseq = -4:0, color = "green4") +
+  #volcaner
+  geom_point(data = hotdry_CvDH, aes(x = log2FoldChange, y = -log10(padj)-3.7), alpha = 0.2, color = "tan") +
+  geom_point(data = coolwet_CvDH, aes(y = log2FoldChange, x = -log10(padj)-3.2), alpha = 0.2, color = "lightblue") +
+  geom_abline(intercept = 0, slope = 1, alpha = 0.3) +
+  geom_abline(intercept = 0, slope = 0, alpha = 0.5) +
+  geom_vline(xintercept = 0, alpha = 0.5) +
+  geom_density(data = hotdry_CvDH[hotdry_CvDH$padj < 0.1,], 
+               aes(x = log2FoldChange, y = after_stat(ndensity)),
+                   fill = "tan",
+               position = position_nudge(y = -3.75),
+               bw = 0.1) +
+  geom_density(data = coolwet_CvDH[coolwet_CvDH$padj < 0.1,], 
+               aes(y = log2FoldChange, x = after_stat(ndensity)),
+                   fill = "lightblue",
+               position = position_nudge(x = -3.251),
+               bw = 0.1) +
+  #overlays
+  geom_density(data = hotdry_CvDH[hotdry_CvDH$padj < 0.1,], 
+               aes(y = log2FoldChange, x = after_stat(ndensity)),
+                   fill = "tan",
+               position = position_nudge(x = -3.251),
+               bw = 0.1, alpha = 0.1, linewidth = 0.1) +
+  geom_density(data = coolwet_CvDH[coolwet_CvDH$padj < 0.1,], 
+               aes(x = log2FoldChange, y = after_stat(ndensity)),
+                   fill = "lightblue",
+               position = position_nudge(y = -3.75),
+               bw = 0.1, alpha = 0.1, linewidth = 0.1) +
+  coord_cartesian(xlim = c(-3,2), ylim = c(-3.5,2)) +
+  theme(panel.border = element_rect(color = "black")) +
+  labs(x = "LFC Control vs Drought + Heat (Hot/Dry Source)",
+       y = "LFC Control vs Drought + Heat (Cool/wet Source)",
+       title = "LFC of Common Treatment DEGs against Source Climate")
+```
+
+
+```{r}
+ggsave("TemporalPlot.tif", plot = temporalPlot)
+ggsave("TreatmentPlot.tif", plot = treatmentPlot)
+```
+
+
+```{r}
+ggplot() +
+  geom_point(data = TreatmentPlotDF, aes(x = hotdry, y = coolwet),
+             size = 3, color = "green4") +
+  geom_smooth(data = TreatmentPlotDF, aes(x = hotdry, y = coolwet),
+              method = "lm", formula = y~x +0, fullrange = T, level = 0.5,
+              xseq = -4:0, color = "green4") +
+  geom_abline(intercept = 0, slope = 1, alpha = 0.3) +
+  geom_abline(intercept = 0, slope = 0, alpha = 0.5) +
+  geom_vline(xintercept = 0, alpha = 0.5) +
+  geom_point(data = hotdry_CvDH, aes(x = log2FoldChange, y = -log10(padj)-3.7), alpha = 0.2, color = "tan") +
+  coord_cartesian(xlim = c(-3,2), ylim = c(-3.5,2)) +
+  theme(panel.border = element_rect(color = "black")) +
+  labs(x = "LFC Control vs Drought + Heat (Hot/Dry Source)",
+       y = "LFC Control vs Drought + Heat (Cool/wet Source)",
+       title = "LFC of Common Treatment DEGs against Source Climate")
 ```
 
