@@ -188,9 +188,9 @@ ggplot(pcaData, aes(PC1, PC2)) +
 ### source_climate versus treatment
 ```{r}
 metadataSpruceRNA$day_harvest <- as.character(metadataSpruceRNA$day_harvest)
-#dds_sourceVday$source_climate <- relevel(dds_sourceVday$source_climate, ref = "HotDry")
+dds_sourceVday$source_climate <- relevel(dds_sourceVday$source_climate, ref = "HotDry")
 dds_sourceVtreatment$treatment <- relevel(dds_sourceVtreatment$treatment, ref = "Control")
-#dds_sourceVday$day_harvest <- relevel(dds_sourceVday$day_harvest, ref = "0")
+dds_sourceVday$day_harvest <- relevel(dds_sourceVday$day_harvest, ref = "0")
 
 
 dds_sourceVday$group <- factor(paste0(dds_sourceVday$source_climate, dds_sourceVday$day_harvest))
@@ -281,7 +281,7 @@ ggplot(res_df, aes(x = log2FoldChange, y = -log10(padj), color = significance)) 
     x = expression(log[2]~Fold~Change),
     y = expression(-log[10]~Adjusted~p~value)
   ) +
-  theme_bw(base_size = 16) +
+  theme_bw(base_size = 14) +
   theme(legend.title = element_blank())
 }
 
@@ -295,10 +295,10 @@ vol(coolwet_0v5, "0v5 CW")
 vol(coolwet_0v10, "0v10 CW")
 vol(coolwet_5v10, "5v10 CW")
 vol(hotdry_CvH, "CvH HD")
-vol(hotdry_CvDH, "CvDH HD")
+vol(hotdry_CvDH, "Control versus Drought & Heat treatments (source = hot/dry)")
 vol(hotdry_HvDH, "HvDH HD")
 vol(coolwet_CvH, "CvH CW")
-vol(coolwet_CvDH, "CvDH CW")
+vol(coolwet_CvDH, "Control versus Drought & Heat treatments (source = cool/wet)")
 vol(coolwet_HvDH, "HvDH CW")
 
 ```
