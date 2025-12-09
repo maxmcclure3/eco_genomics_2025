@@ -500,7 +500,7 @@ TreatmentPlotDF <- TreatmentPlotDF %>%
  - at day 5, there are only 4 
   
 ```{r}
-
+library(dplyr)
 dfhotdry <- data.frame(
   row.names = c(rownames(filtered_degs_hotdry10)), 
   LFC = filtered_degs_hotdry10$log2FoldChange
@@ -621,4 +621,298 @@ ggplot() +
        y = "LFC Control vs Drought + Heat (Cool/wet Source)",
        title = "LFC of Common Treatment DEGs against Source Climate")
 ```
+
+
+
+Gene ontology
+
+```{r}
+library(stringr)
+z <- read.table("/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/ref_genome/Pmariana/annotation/GO_annotations/Pmariana_GO_annotations_sorted_join.txt", header=F, fill=T)
+
+z_new <- z %>%
+  mutate(V7=ifelse(V7 %in% "", V2, V7))
+colnames(z_new) <- c("gene", "start", "stop", "geneID", 
+                     "strand", "parent", "marker")
+
+x <- read.table("/gpfs1/cl/ecogen/pbio6800/GroupProjects/hotConifers/RS_bt2", 
+                header=F)
+x2 <- x[, c("V1", "V4")]
+colnames(x2) <- c("marker", "geneID")
+
+######
+GO_table <- read.delim("/gpfs1/cl/ecogen/pbio6800/GroupProjects/hotConifers/GO_table_spruce.tsv",
+                       header = T, sep = "\t")
+GO_table <- GO_table %>%
+  distinct(marker, .keep_all = TRUE) #remove duplicates
+
+GO_table_try <- merge(x2, GO_table, by ="marker") #add geneIDs to the GO terms
+
+zGO <- GO_table_try[, c("geneID.x", "gene")] #filter out nonuseful columns
+
+colnames(zGO) <- c("geneID", "GO") #rename column names
+
+zGO <- zGO %>%
+  mutate(geneID = str_remove(geneID, "ID="))
+
+gene2GO_spruce <- zGO %>%
+  filter(!is.na(GO) & GO != "") %>%
+  group_by(geneID) %>%
+  summarise(GO = list(unique(GO)), .groups = "drop") %>%
+  with(setNames(zGO$GO, zGO$geneID))
+
+gene2GO_spruce <- lapply(gene2GO_spruce, function(x) unlist(strsplit(x, ","))) #this is taking quite a while
+#this above object should be good for direct input into topGO
+
+```
+
+# sample GO work
+```{r}
+topGOshbang_spruce <- function(data){
+library(topGO)
+library(GO.db)
+
+# Convert to data frame
+GOtest <- as.data.frame(data)
+
+# Add geneID column from rownames
+GOtest$geneID <- rownames(GOtest)
+GOtest <- GOtest[, c("geneID", setdiff(names(GOtest), "geneID"))]
+
+# Identify DEGs that have GO annotations
+GOtest <- GOtest[GOtest$geneID %in% zGO$geneID, ]
+
+# Keep only significant DEGs 
+GOtest_sig <- subset(GOtest, padj < 0.05 & abs(log2FoldChange) > 0.5)
+
+
+# Merge with GO annotations
+spruce_stat <- merge(GOtest_sig, zGO, by = "geneID")
+
+spruce_stat <- spruce_stat %>%
+  distinct(geneID, .keep_all = TRUE) #remove duplicates
+
+# Create geneList for TopGO: 1 = DEG, 0 = not DEG
+all_genes <- names(gene2GO_spruce)
+geneList <- setNames(as.integer(all_genes %in% spruce_stat$geneID), all_genes)
+
+#Build TopGO pipeline 
+GOdata <- new("topGOdata",
+              description = "GO enrichment",
+              ontology = "BP",
+              allGenes = geneList,
+              geneSel = function(x) x == 1,
+              nodeSize = 5,
+              annot = annFUN.gene2GO,
+              gene2GO = gene2GO_spruce)
+
+#test for enrichment 
+result <- runTest(GOdata, algorithm = "parentChild", statistic = "fisher")
+
+# Convert results to table
+res_table <- GenTable(GOdata, classicFisher = result,
+                      topNodes = length(usedGO(GOdata))) %>%
+  mutate(classicFisher = as.numeric(classicFisher),
+         Annotated = as.numeric(Annotated),
+         Significant = as.numeric(Significant))
+
+
+#plot!
+
+# Keep GO terms with enough but not too many genes
+filtered_GO_results <- res_table %>%
+  filter(Annotated >= 5 & Annotated < 500) %>%  # adjust as needed
+  group_by(Term) %>%
+  slice_min(classicFisher, n = 1) %>%  # keep only the most significant per Term
+  ungroup() %>%
+  arrange(classicFisher)
+
+return(filtered_GO_results)
+}
+
+TopGO_plot <- function(df, title, categories = 30) {
+  df %>%
+    slice_head(n = categories) %>%
+    ggplot(aes(x = -log10(classicFisher),
+               y = reorder(Term, -log10(classicFisher)),
+               size = Significant,
+               color = -log10(classicFisher))) +
+    geom_point(alpha = 0.8) +
+    scale_color_gradientn(
+      colors = c("pink", "orchid", "purple", "purple4"),
+      name = "-log10(p-value)"
+    ) +
+    scale_size_continuous(name = "# Significant Genes") +
+    xlab("-log10-classicFisher") +
+    ylab("Biological Function") +
+    ggtitle(title) +
+    theme_minimal() +
+    theme(plot.margin = margin(10, 100, 10, 10),
+          axis.text.y = element_text(size = 10, hjust = 1)) +
+    coord_cartesian(clip = "off")
+}
+
+```
+
+
+```{r}
+
+#hotdry
+hotdry_0v10_GO <- topGOshbang_spruce(hotdry_0v10)
+hotdry_0v5_GO <- topGOshbang_spruce(hotdry_0v5)
+hotdry_5v10_GO <- topGOshbang_spruce(hotdry_5v10)
+
+#coolwet
+coolwet_0v10_GO <- topGOshbang_spruce(coolwet_0v10)
+coolwet_0v5_GO <- topGOshbang_spruce(coolwet_0v5)
+coolwet_5v10_GO <- topGOshbang_spruce(coolwet_5v10)
+
+#hotdry
+TopGO_plot(hotdry_0v10_GO, title = "0v10", categories = 10)
+TopGO_plot(hotdry_0v5_GO, title = "0v5", categories = 10)
+TopGO_plot(hotdry_5v10_GO, title = "5v10", categories = 10)
+
+#coolwet
+TopGO_plot(coolwet_0v10_GO, title = "0v10", categories = 10)
+TopGO_plot(coolwet_0v5_GO, title = "0v5", categories = 10)
+TopGO_plot(coolwet_5v10_GO, title = "5v10", categories = 10)
+```
+
+
+# common GO
+```{r}
+
+temporal_common_toGO <- hotdry_0v10[rownames(hotdry_0v10) %in% commondegs,]
+treatment_common_toGO <- coolwet_0v10[rownames(coolwet_0v10) %in% commonTreatmentDegs,]
+
+```
+
+#revigo
+```{r}
+revigo <- function(data, color = "color"){
+# Select only the columns REVIGO needs
+revigo_input <- data[, c("GO.ID", "classicFisher")]
+
+sigRes <- revigo_input[as.numeric(revigo_input$classicFisher) < 0.2, ]
+
+# Rename columns for clarity
+colnames(sigRes) <- c("GO.ID", "pValue")
+
+# Save as txt to upload to REVIGO
+write.table(sigRes, file = sprintf("topGOsig_for_REVIGO_%s.txt", color), sep = "\t", row.names = FALSE, quote = FALSE)
+}
+
+setwd("~/projects/eco_genomics_2025/finalproject/mydata/")
+
+revigo(hotdry_0v10_GO, color = "HD0v10")
+revigo(hotdry_0v5_GO, color = "HD0v5")
+revigo(hotdry_5v10_GO, color = "HD5v10")
+
+revigo(coolwet_0v10_GO, color = "CW0v10")
+revigo(coolwet_5v10_GO, color = "CW0v5")
+revigo(coolwet_5v10_GO, color = "CW5v10")
+```
+ 
+#cool revigo plot
+
+```{r}
+geom_point_color <- function(color, color_id = "brown") {
+
+  p <- geom_point(data = color, aes(PC_0,PC_1), 
+             color = color_id,
+             size = color$LogSize * 1.75, 
+             alpha = color$Valuescaled)
+    
+return(p)
+  
+}
+
+library(readr)
+
+setwd("~/projects/eco_genomics_2025/finalproject/myresults/")
+
+CW05 <- read_tsv("CW05.tsv")
+CW010 <- read_tsv("CW010.tsv")
+CW510 <- read_tsv("CW510.tsv")
+
+HD05 <- read_tsv("HD05.tsv")
+HD010 <- read_tsv("HD010.tsv")
+HD510 <- read_tsv("HD510.tsv")
+
+#####
+CW05 <- CW05 %>%
+  mutate(Valuescaled = Value /min(Value))
+CW05 <- CW05 %>%
+  filter(PC_0 != "null") %>%
+  filter(PC_1 != "null")
+CW05$source <- "Cool/Wet 0v5"
+
+CW010 <- CW010 %>%
+  mutate(Valuescaled = Value /min(Value))
+CW010 <- CW010 %>%
+  filter(PC_0 != "null") %>%
+  filter(PC_1 != "null")
+CW010$source <- "Cool/Wet 0v10"
+
+CW510 <- CW510 %>%
+  mutate(Valuescaled = Value /min(Value))
+CW510 <- CW510 %>%
+  filter(PC_0 != "null") %>%
+  filter(PC_1 != "null")
+CW510$source <- "Cool/Wet 5v10"
+
+HD010 <- HD010 %>%
+  mutate(Valuescaled = Value /min(Value))
+HD010 <- HD010 %>%
+  filter(PC_0 != "null") %>%
+  filter(PC_1 != "null")
+HD010$source <- "Hot/Dry 0v10"
+
+HD05 <- HD05 %>%
+  mutate(Valuescaled = Value /min(Value))
+HD05 <- HD05 %>%
+  filter(PC_0 != "null") %>%
+  filter(PC_1 != "null")
+HD05$source <- "Hot/Dry 0v5"
+
+HD510 <- HD510 %>%
+  mutate(Valuescaled = Value /min(Value))
+HD510 <- HD510 %>%
+  filter(PC_0 != "null") %>%
+  filter(PC_1 != "null")
+HD510$source <- "Hot/Dry 5v10"
+######
+
+totaldf <- rbind(CW010, CW05, CW510,
+                 HD010, HD05, HD510)
+
+
+CW05p <- geom_point_color(CW05, "lightblue1")
+CW010p <- geom_point_color(CW010, "blue")
+CW510p <- geom_point_color(CW510, "lightblue4")
+
+HD05p <- geom_point_color(HD05, "tan")
+HD010p <- geom_point_color(HD010, "red3")
+HD510p <- geom_point_color(HD510, "red1")
+
+totaldf$PC_0 <- as.numeric(totaldf$PC_0)
+totaldf$PC_1 <- as.numeric(totaldf$PC_1)
+
+ggplot() +
+  geom_point(data = totaldf, aes(PC_0, PC_1, 
+                                 group = source, 
+                                 color = source),
+             size = totaldf$LogSize * 1.75, 
+             alpha = totaldf$Valuescaled) +
+  labs(x = "Semantic Space X", y = "Semantic Space Y") +
+  theme() +
+  scale_color_manual(values = c("forestgreen", "lightblue", "blue", 
+                       "tan", "orange2", "red1"))
+  
+  
+  
+  
+  
+```
+
 
