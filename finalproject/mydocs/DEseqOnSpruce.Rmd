@@ -768,14 +768,23 @@ coolwet_0v5_GO <- topGOshbang_spruce(coolwet_0v5)
 coolwet_5v10_GO <- topGOshbang_spruce(coolwet_5v10)
 
 #hotdry
-TopGO_plot(hotdry_0v10_GO, title = "0v10", categories = 10)
-TopGO_plot(hotdry_0v5_GO, title = "0v5", categories = 10)
-TopGO_plot(hotdry_5v10_GO, title = "5v10", categories = 10)
+topGO_HD010 <- TopGO_plot(hotdry_0v10_GO, title = "0v10", categories = 10)
+topGO_HD05 <- TopGO_plot(hotdry_0v5_GO, title = "0v5", categories = 10)
+topGO_HD510 <- TopGO_plot(hotdry_5v10_GO, title = "5v10", categories = 10)
 
 #coolwet
-TopGO_plot(coolwet_0v10_GO, title = "0v10", categories = 10)
-TopGO_plot(coolwet_0v5_GO, title = "0v5", categories = 10)
-TopGO_plot(coolwet_5v10_GO, title = "5v10", categories = 10)
+topGO_CW010 <- TopGO_plot(coolwet_0v10_GO, title = "0v10", categories = 10)
+topGO_CW05 <- TopGO_plot(coolwet_0v5_GO, title = "0v5", categories = 10)
+topGO_CW510 <- TopGO_plot(coolwet_5v10_GO, title = "5v10", categories = 10)
+setwd("~/projects/eco_genomics_2025/finalproject/myresults/")
+
+ggsave("TG_HD010.tif", topGO_HD010)
+ggsave("TG_HD05.tif", topGO_HD05)
+ggsave("TG_HD510.tif", topGO_HD510)
+
+ggsave("TG_CW010.tif", topGO_CW010)
+ggsave("TG_CW05.tif", topGO_CW05)
+ggsave("TG_CW510.tif", topGO_CW510)
 ```
 
 
@@ -898,19 +907,21 @@ HD510p <- geom_point_color(HD510, "red1")
 totaldf$PC_0 <- as.numeric(totaldf$PC_0)
 totaldf$PC_1 <- as.numeric(totaldf$PC_1)
 
+theme_set(theme(base_family = "Times New Roman"))
 ggplot() +
   geom_point(data = totaldf, aes(PC_0, PC_1, 
                                  group = source, 
                                  color = source),
              size = totaldf$LogSize * 1.75, 
              alpha = totaldf$Valuescaled) +
-  labs(x = "Semantic Space X", y = "Semantic Space Y") +
+  labs(x = "Semantic Space X", y = "Semantic Space Y",
+       color = "Source Climate") +
   theme() +
   scale_color_manual(values = c("forestgreen", "lightblue", "blue", 
                        "tan", "orange2", "red1"))
   
   
-  
+  ggsave(filename = "~/projects/eco_genomics_2025/finalproject/myresults/revigoplotfinalpaper.tif", plot = revplot)
   
   
 ```
